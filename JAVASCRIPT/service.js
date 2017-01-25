@@ -97,7 +97,6 @@ angular.module('DesignerService', ['DesignerValue'])
 		for (var i = (page-1) * self.records_per_page; i < (page * self.records_per_page) && i < self.designerImages.length; i++) {
 			self.designerPaginateArray.push(self.designerImages[i]);
     	}
-    	console.log(self.designerPaginateArray);
   		return self.designerPaginateArray;
 	};
 
