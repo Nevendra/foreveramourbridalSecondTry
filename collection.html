@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 
@@ -8,7 +9,7 @@
     <title>Gown Collection | Forever Amour Bridal Boutique</title>
 
 	<meta name="charset" content="utf-8">
-	<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-Type" content="text/html; charset=utf-8"> 
 
 	<meta name="description" content="Large selection of designer wedding gowns at beautiful prices, as well as veils and belts to match. Justin Alexander, Rosa Clara, Symphony, Jude Jowilson and more.">
 	<meta name="keywords" content="collection, gallery, justin alexander, sposa, rosa clara, jude, jowilson, symphony">
@@ -26,10 +27,10 @@
 	<!--<link href="css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">-->
 
 	<!--<script src="JS/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>-->
-
+    
     <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-
+	
 <!-- 	<script src="/bower_components/angular/angular.js"></script>
  -->	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 
@@ -76,129 +77,185 @@
 			</div>
 			<div class="clear"></div>
 		</nav>
-<!--      <div id="google_translate_element" ng-if="ctrl.mainHtml == true"></div><script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en,es,sp,fa,fr,hr,ko,pt,ru,tl,tr,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-80185265-1'}, 'google_translate_element');
-      }
-    </script> -->
-<!-- 		<div class="collectionMainHeader">
-			<div class="collectionMainHeaderText">
-				<div class="cmhtText">
-					<h2>Our</h2>
-					<h1>Collection</h1>
-				</div>
-			</div>
-		</div> -->
+<!-- 			<div id="google_translate_element" ng-if="ctrl.mainHtml == true"></div><script type="text/javascript">
+			function googleTranslateElementInit() {
+		  	new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en,es,sp,fa,fr,hr,ko,pt,ru,tl,tr,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-80185265-1'}, 'google_translate_element');
+			}
+		</script> -->
 
 		<div class="mainContainer">
 
-			<!--
+			<div class="designerChoices" ng-if="ctrl.mainHtml == true">
+				<div class="rr rr-left" ng-click="ctrl.clickedExclusiveOrFeature(ctrl.exclusive)">    
+					<div>        
+						<h2>EXCLUSIVE</h2>        
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>    
 
-			EXCLUSIVE
+					</div>
+				</div>
+
+				<div class="rr rr-right" ng-click="ctrl.clickedExclusiveOrFeature(ctrl.feature)">    
+					<div>        
+						<h2>FEATURE</h2>        
+						<p>Lorem ipsum dolor sit amet, dolore eu feugiat facilisis.</p>    
+					</div>
+				</div>
+			</div>
+
+			<div class="threeD_Container" ng-if="ctrl.mainHtml == true">
+				<div id="carousel">
+					<figure><img src="http://lorempixel.com/186/116/nature/1" alt=""></figure>
+					<figure><img src="http://lorempixel.com/186/116/nature/2" alt=""></figure>
+					<figure><img src="http://lorempixel.com/186/116/nature/3" alt=""></figure>
+					<figure><img src="http://lorempixel.com/186/116/nature/4" alt=""></figure>
+					<figure><img src="http://lorempixel.com/186/116/nature/5" alt=""></figure>
+					<figure><img src="http://lorempixel.com/186/116/nature/6" alt=""></figure>
+					<figure><img src="http://lorempixel.com/186/116/nature/7" alt=""></figure>
+					<figure><img src="http://lorempixel.com/186/116/nature/8" alt=""></figure>
+					<figure><img src="http://lorempixel.com/186/116/people/9" alt=""></figure>
+				</div>
+			</div>
+
+
+			<!-- 
+
+			EXCLUSIVE 
 
 			-->
-
-			<div class="designersWrapper exclusive">
-				<div>
-					<p>Exclusive Collection</p>
+			<div class="exclusiveContainer" ng-if="ctrl.clickedExclusive == true">
+				<div class="designersWrapper exclusive" ng-if="ctrl.viewExclusive == false">
+					<div>
+						<p>Exclusive Collection</p>
+					</div>
+						<ul class="designerSliderContainer">
+							<li class="designerSlides" ng-repeat="designer in ctrl.exclusiveDesignerList">
+	<!-- 							<div class="aboutDesigner">
+									<h1 ng-bind="designer.name"></h1>
+									<p ng-bind="designer.description"></p>
+									<a href="" ng-click="ctrl.viewGallery(designer.name, ctrl.current_page, ctrl.exclusiveSelected)">View Gallery</a>
+								</div> -->
+								<p ng-bind="designer.name"></p>
+								<img src="{{designer.mainImage}}" ng-click="ctrl.viewGallery(designer.name, ctrl.exclusive_page, ctrl.exclusiveSelected, designer.mainImage, designer.description)">
+							</li>
+						</ul>
+						<div class="clear"></div>
 				</div>
-					<ul class="designerSliderContainer">
-						<li class="designerSlides" ng-repeat="designer in ctrl.exclusiveDesignerList">
-<!-- 							<div class="aboutDesigner">
-								<h1 ng-bind="designer.name"></h1>
-								<p ng-bind="designer.description"></p>
-								<a href="" ng-click="ctrl.viewGallery(designer.name, ctrl.current_page, ctrl.exclusiveSelected)">View Gallery</a>
-							</div> -->
-							<p ng-bind="designer.name"></p>
-							<img src="{{designer.mainImage}}">
-						</li>
-					</ul>
+
+				<div class="exclusiveNameList" ng-if="ctrl.viewExclusive == false">
+						<ul class="designerNamesArray">
+							<li class="designer" ng-repeat="desNames in ctrl.exclusiveDesignerNames">
+								<a id="theDesigners" href="#" ng-bind="desNames.name" ng-click="ctrl.viewGallery(desNames.name, ctrl.exclusive_page, ctrl.exclusiveSelected, desNames.mainImage, desNames.description)"></a>
+							</li>
+						</ul>
+				</div>
+
+				
+
+				<div ng-if="ctrl.clickedThumbNail == true" class="selectedImage">
+					<div class="closeDesignerImageGallery">
+						<p ng-click="ctrl.closeDesignerImageGallerySelectedImage()">X</p>
+					</div>
+					<img ng-src="{{ctrl.selectedImage}}">
+					<div class="closeDesignerImageGallery">
+						<p ng-click="ctrl.closeDesignerImageGallerySelectedImage()">X</p>
+					</div>
+				</div>
+
+				<div id="viewImagesInGallery" ng-if="ctrl.viewExclusive == true && ctrl.clickedThumbNail == false">
+					<p ng-click="ctrl.closeDesignerImageGallery()">close</p>
+					<div class="designerNameForGallery">
+						<img src="{{ctrl.exclusiveDesignerImage}}">
+						<div class="designerNameForGalleryAbout">
+							<p ng-bind="ctrl.exclusiveDesignerName"></p>
+							<p ng-bind="ctrl.exclusiveDesignerAbout"></p>
+						</div>
+					</div>
+					<div ng-repeat="images in ctrl.exclusiveImages track by $index" class="designerImageGallery">
+							<p class="designerImageGalleryName" ng-bind="images.designerName"></p>
+							<img ng-src="{{images.img}}" ng-click="ctrl.viewLargeImage(images.img)">
+					</div>
 					<div class="clear"></div>
-			</div>
 
-			<div class="exclusiveNameList">
-					<ul class="designerNamesArray">
-						<li class="designer" ng-repeat="desNames in ctrl.exclusiveDesignerNames">
-							<a id="theDesigners" href="#" ng-bind="desNames" ng-click="ctrl.viewGallery(desNames, ctrl.exclusive_page, ctrl.exclusiveSelected)"></a>
-						</li>
-					</ul>
-			</div>
-
-
-
-			<div ng-if="ctrl.clickedThumbNail == true" class="selectedImage">
-				<div class="closeDesignerImageGallery">
-					<p ng-click="ctrl.closeDesignerImageGallerySelectedImage()">X</p>
+					<div class="pages">
+						<p>Current Page: <span ng-bind="ctrl.exclusive_page"></span><span>/</span><span ng-bind="ctrl.exclusivePages"></span></p>
+						<p ng-click="ctrl.prevPage(ctrl.exclusiveSelected, ctrl.exclusiveDesigner)" ng-if="ctrl.exclusive_page > 1"> Previous </p>
+						<p ng-click="ctrl.nextPage(ctrl.exclusiveSelected, ctrl.exclusiveDesigner)" ng-if="ctrl.exclusive_page < ctrl.exclusivePages">  Next</p>
+					</div>
 				</div>
-				<img ng-src="{{ctrl.selectedImage}}">
-				<div class="closeDesignerImageGallery">
-					<p ng-click="ctrl.closeDesignerImageGallerySelectedImage()">X</p>
-				</div>
-			</div>
 
-			<div id="viewImagesInGallery" ng-if="ctrl.viewExclusive == true">
-				<div class="designerNameForGallery">
-					<p ng-bind="ctrl.exclusiveDesignerName"></p>
-				</div>
-				<div ng-repeat="images in ctrl.exclusiveImages track by $index" class="designerImageGallery">
-						<p class="designerImageGalleryName" ng-bind="images.designerName"></p>
-						<img ng-src="{{images.img}}" ng-click="ctrl.viewLargeImage(images.img)">
-				</div>
-				<div class="clear"></div>
-
-				<div class="pages">
-					<p>Current Page: <span ng-bind="ctrl.exclusive_page"></span><span>/</span><span ng-bind="ctrl.exclusivePages"></span></p>
-					<p ng-click="ctrl.prevPage(ctrl.exclusiveSelected, ctrl.exclusiveDesigner)" ng-if="ctrl.exclusive_page > 1"> Previous </p>
-					<p ng-click="ctrl.nextPage(ctrl.exclusiveSelected, ctrl.exclusiveDesigner)" ng-if="ctrl.exclusive_page < ctrl.exclusivePages">  Next</p>
+				<div class="viewOther" ng-click="ctrl.clickedExclusiveOrFeature(ctrl.feature)">
+					<p>Switch To feature</p>
 				</div>
 			</div>
 
 
-		<!--
+		<!-- 
 
-		FEATURE
+		FEATURE 
 
 		-->
-			<div class="designersWrapper feature">
-				<div class="designerMainTitle">
-					<p>Exclusive Collection</p>
+			<div class="featureContainer" ng-if="ctrl.clickedFeature == true">
+				<div class="designersWrapper feature" ng-if="ctrl.viewFeature == false">
+					<div class="designerMainTitle">
+						<p>Exclusive Collection</p>
+					</div>
+						<ul class="designerSliderContainer">
+							<li class="designerSlides" ng-repeat="designer in ctrl.featureDesignerList">
+								<!-- <div class="aboutDesigner">
+									<h1 ng-bind="designer.name"></h1>
+									<p ng-bind="designer.description"></p>
+									<a href="" ng-click="ctrl.viewGallery(designer.name, ctrl.current_page, ctrl.featureSelected)">View Gallery</a>
+								</div> -->
+								<p ng-bind="designer.name"></p>
+								<img src="{{designer.mainImage}}" ng-click="ctrl.viewGallery(designer.name, ctrl.feature_page, ctrl.featureSelected, designer.mainImage, designer.description)">
+							</li>
+						</ul>
+						<div class="clear"></div>
 				</div>
-					<ul class="designerSliderContainer">
-						<li class="designerSlides" ng-repeat="designer in ctrl.featureDesignerList">
-							<!-- <div class="aboutDesigner">
-								<h1 ng-bind="designer.name"></h1>
-								<p ng-bind="designer.description"></p>
-								<a href="" ng-click="ctrl.viewGallery(designer.name, ctrl.current_page, ctrl.featureSelected)">View Gallery</a>
-							</div> -->
-							<p ng-bind="designer.name"></p>
-							<img src="{{designer.mainImage}}">
-						</li>
-					</ul>
+
+				<div class="featureNameList" ng-if="ctrl.viewFeature == false">
+						<ul class="designerNamesArray">
+							<li class="designer" ng-repeat="desNames in ctrl.featureDesignerNames">
+								<a id="theDesigners" href="#" ng-bind="desNames.name" ng-click="ctrl.viewGallery(desNames.name, ctrl.feature_page, ctrl.featureSelected, desNames.mainImage, desNames.description)"></a>
+							</li>
+						</ul>
+				</div>
+
+				<div ng-if="ctrl.clickedThumbNail == true" class="selectedImage">
+					<div class="closeDesignerImageGallery">
+						<p ng-click="ctrl.closeDesignerImageGallerySelectedImage()">X</p>
+					</div>
+					<img ng-src="{{ctrl.selectedImage}}">
+					<div class="closeDesignerImageGallery">
+						<p ng-click="ctrl.closeDesignerImageGallerySelectedImage()">X</p>
+					</div>
+				</div>
+				
+				<div id="viewImagesInGallery" ng-if="ctrl.viewFeature == true && ctrl.clickedThumbNail == false">
+					<p ng-click="ctrl.closeDesignerImageGallery()">close</p>
+					<div class="designerNameForGallery">
+						<img src="{{ctrl.featureDesignerImage}}">
+						<div class="designerNameForGalleryAbout">
+							<p ng-bind="ctrl.featureDesignerName"></p>
+							<p ng-bind="ctrl.featureDesignerAbout"></p>
+						</div>
+					</div>
+					<div ng-repeat="images in ctrl.featureImages track by $index" class="designerImageGallery">
+							<p class="designerImageGalleryName" ng-bind="images.designerName"></p>
+							<img ng-src="{{images.img}}" ng-click="ctrl.viewLargeImage(images.img)">
+					</div>
 					<div class="clear"></div>
-			</div>
 
-			<div class="featureNameList">
-					<ul class="designerNamesArray">
-						<li class="designer" ng-repeat="desNames in ctrl.featureDesignerNames">
-							<a id="theDesigners" href="#" ng-bind="desNames" ng-click="ctrl.viewGallery(desNames, ctrl.feature_page, ctrl.featureSelected)"></a>
-						</li>
-					</ul>
-			</div>
-
-			<div id="viewImagesInGallery" ng-if="ctrl.viewFeatured == true">
-				<div class="designerNameForGallery">
-					<p ng-bind="ctrl.featureDesignerName"></p>
+					<div class="pages">
+						<p>Current Page: <span ng-bind="ctrl.feature_page"></span><span>/</span><span ng-bind="ctrl.featurePages"></span></p>
+						<p ng-click="ctrl.prevPage(ctrl.featureSelected, ctrl.featureDesigner)" ng-if="ctrl.feature_page > 1"> Previous </p>
+						<p ng-click="ctrl.nextPage(ctrl.featureSelected, ctrl.featureDesigner)" ng-if="ctrl.feature_page < ctrl.featurePages">  Next</p>
+					</div>
 				</div>
-				<div ng-repeat="images in ctrl.featureImages track by $index" class="designerImageGallery">
-						<p class="designerImageGalleryName" ng-bind="images.designerName"></p>
-						<img ng-src="{{images.img}}" ng-click="ctrl.viewLargeImage(images.img)">
-				</div>
-				<div class="clear"></div>
 
-				<div class="pages">
-					<p>Current Page: <span ng-bind="ctrl.feature_page"></span><span>/</span><span ng-bind="ctrl.featurePages"></span></p>
-					<p ng-click="ctrl.prevPage(ctrl.featureSelected, ctrl.featureDesigner)" ng-if="ctrl.feature_page > 1"> Previous </p>
-					<p ng-click="ctrl.nextPage(ctrl.featureSelected, ctrl.featureDesigner)" ng-if="ctrl.feature_page < ctrl.featurePages">  Next</p>
+
+				<div class="viewOther" ng-click="ctrl.clickedExclusiveOrFeature(ctrl.exclusive)">
+					<p>Switch To exclusive</p>
 				</div>
 			</div>
 
@@ -255,10 +312,11 @@
 
 
 	</div><!-- end controller -->
-	<!-- <div class="hoverEffect">
+	<div class="hoverEffect">
 			    <a href="https://twitter.com/Dave_Conner" class="btn btn-4"><span>Hover</span></a>
 
-	</div> -->
+	</div>
 </body>
 
 </html>
+
