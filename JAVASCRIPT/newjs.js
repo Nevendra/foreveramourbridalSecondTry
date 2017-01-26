@@ -12,11 +12,11 @@ $(document).ready(function(){
 	// window.onload = function() {
 	//  setTimeout (function () {
 	//   scrollTo(0,0);
-	//  }, 100); 
+	//  }, 100);
 	// }
 
 	// $(window).on('beforeunload', function() {
- //    	$(window).scrollTop(0); 
+ //    	$(window).scrollTop(0);
 	// });
 
 
@@ -24,7 +24,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		// $("body").css("overflow-y", "hidden");
 		$("body").css("overflow-y", "auto");
-		$("html,body").animate({scrollTop: 0}, 100); 
+		$("html,body").animate({scrollTop: 0}, 100);
 		$(badgesDiv).css("height", badgesHeight);
 		$(badges).css("width", "0%");
 
@@ -36,9 +36,9 @@ $(document).ready(function(){
 
 		// });
 	});
-	var navUl = $("nav ul");
-	var navLi = $("nav ul li");
-	navLi.css("width", navUl.width() / 7);
+	// var navUl = $("nav ul");
+	// var navLi = $("nav ul li");
+	// navLi.css("width", navUl.width() / 7);
 	var contentContainer = $(".contentContainer");
 	var contents = contentContainer.find(".content")
 	var contentHeight = contents.height() * contents.length;

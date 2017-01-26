@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 	function sliderFeature(){
 
-		var animationSpeed = 1000;
+		var animationSpeed = 000;
 		var sliderSpeed = 3000;
 		var currentSlide = 1;
 		var sliderWrapper = $(".feature");
