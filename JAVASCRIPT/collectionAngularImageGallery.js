@@ -88,6 +88,7 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 	self.clickedExclusiveOrFeature = function(clicked){
 		console.log("hey");
 		self.choice = clicked;
+		self.scrollTo();
 		console.log(self.choice);
 		if(self.choice === "feature"){
 			self.clickedFeature = true;

@@ -23,10 +23,12 @@ $(document).ready(function(){
 
 
 	$(sliderContainer).on("mouseenter", ".designerSlides", function(){
+		console.log("enter")
 		var slideUp = $(this).find("p");
 		slideUp.animate({bottom: "0px", opacity: 1}, 0750);
 	  });
 	$(sliderContainer).on("mouseleave", ".designerSlides", function(){
+		console.log("enter")
 		var slideDown = $(this).find("p");
 		slideDown.animate({bottom: "-30px", opacity: 0}, 0500);
 	  });
