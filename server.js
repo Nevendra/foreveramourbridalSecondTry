@@ -4,7 +4,12 @@ const express     = require('express');
 const logger      = require('morgan');
 const path        = require('path');
 const app         = express();
+const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');
+const customRouter = require('./routes/custom');
+const contactRouter = require('./routes/contact');
+const apptRouter = require('./routes/appointment');
+const collectionRouter = require('./routes/collection');
 
 const PORT    = process.argv[2] || process.env.port || 3000;
 
@@ -14,6 +19,11 @@ app.set('views', 'views');
 app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/index', indexRouter);
 app.use('/about', aboutRouter);
+app.use('/custom', customRouter);
+app.use('/contact', contactRouter);
+app.use('/appointment', apptRouter);
+app.use('/collection', collectionRouter);
 
 app.listen(PORT, () => console.log('Server running on port', PORT));
