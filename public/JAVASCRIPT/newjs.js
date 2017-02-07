@@ -8,6 +8,7 @@ $(document).ready(function(){
 	var badgeOffSetTop = badgesDiv.offset().top;
 	var scrollPage = true;
 	$("body").css("overflow-y", "auto");
+  console.log(badgeOffSetTop);
 
 	// window.onload = function() {
 	//  setTimeout (function () {
@@ -58,7 +59,7 @@ $(document).ready(function(){
 
 	$(window).on("scroll", function() {
 
-		if($(window).scrollTop() >= badgeOffSetTop -100){
+		if($(window).scrollTop() >= badgeOffSetTop - 150){
 			function stopStartScroll(){
 				if(scrollPage) {
 					$("body").css("overflow-y", "hidden");
@@ -67,7 +68,7 @@ $(document).ready(function(){
 				}
 			};
 			stopStartScroll();
-			 $(badges).animate({width: "15%",opacity: 1}, 1000, function(){
+			 $(badges).animate({width: "12%",opacity: 1}, 1000, function(){
 			 	scrollPage = false;
 			 	stopStartScroll();
 			 });
