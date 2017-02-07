@@ -9,10 +9,11 @@ angular.module('DesignerValue', [])
 				description: "Designed in Milan, the fashion capital of the world, and manufactured with the highest quality fabrics. Sophisticated couture gowns and elegant destination dresses are made with the highest attention to detail that flatters every figure, taste, and occasion.",
 				featureOrExclusive: "feature",
 				mainImage: "Images/Collection_large/AK160_full.jpg",
+				link: "eddieK.html",
 				gallery: [
 					{
 						img: "Images/Collection_large/AK160_full.jpg",
-						designerName: "",
+						designerName: "Eddie k",
 						style: [
 							{
 								name: "mermaid"
@@ -27,7 +28,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "Images/Collection_large/AK181_full.jpg",
-						designerName: "",
+						designerName: "Eddie k",
 						style: [
 							{
 								name: "ball gown"
@@ -42,7 +43,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "Images/Collection_large/EddyK_1.jpg",
-						designerName: "",
+						designerName: "Eddie k",
 						style: [
 							{
 								name: "a-line"
@@ -57,7 +58,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "Images/Collection_large/EddyK_2.jpg",
-						designerName: "",
+						designerName: "Eddie k",
 						style: [
 							{
 								name: "trumpet"
@@ -72,7 +73,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "Images/Collection_large/EddyK_3-cropped.jpg",
-						designerName: "",
+						designerName: "Eddie k",
 						style: [
 							{
 								name: "mermaid"
@@ -87,7 +88,7 @@ angular.module('DesignerValue', [])
 					},					
 					{
 						img: "Images/Collection_large/EddyK_4-cropped.png",
-						designerName: "",
+						designerName: "Eddie k",
 						style: [
 							{
 								name: "ball gown"	
@@ -102,7 +103,7 @@ angular.module('DesignerValue', [])
 					},					
 					{
 						img: "Images/Collection_large/EK1084_back2.jpg",
-						designerName: "",
+						designerName: "Eddie k",
 						style: [
 							{
 								name: "a-line"
@@ -117,7 +118,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "Images/Collection_large/EK1084_full-1.jpg",
-						designerName: "",
+						designerName: "Eddie k",
 						style: [
 							{
 								name: "trumpet"
@@ -132,7 +133,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "Images/Collection_large/EK1088_full-e1464107889952.jpg",
-						designerName: "",
+						designerName: "Eddie k",
 						style: [
 							{
 								name: "mermaid"
@@ -153,6 +154,7 @@ angular.module('DesignerValue', [])
 				description: "One of America's and Europe's most influential producers of wedding fashions since 1949, blending contemporary style with classic details. Gowns that create a timeless romantic look with lavish lace, memorable details, and stunning silhouettes. If you love Grace Kelly, Audrey Hepburn, or Jackie Kennedy, these designs are perfect for you.",
 				featureOrExclusive: "feature",
 				mainImage: "Images/Collection_large/JustinAlexander_3.png",
+				link: "justinAlexander.html",
 				gallery: [
 					{
 						img: "Images/Collection_large/JustinAlexander_3.png",
@@ -584,6 +586,7 @@ angular.module('DesignerValue', [])
 				description: "Nicole Spose has collections that speak of a fresh and young fashion, that dictate trends, while maintaining quality and tailoring. Exclusively at our salon in New York City",
 				featureOrExclusive: "exclusive",
 				mainImage: "Images/Collection_large/nicole-spose-NIAB17092.jpg",
+				link: "nicolespose.html",
 				gallery: [
 					{
 						img: "Images/Collection_large/nicole-spose-NIAB17092.jpg",
@@ -667,6 +670,7 @@ angular.module('DesignerValue', [])
 				description: "Timeless and romantic details come together to create a vast array of styles for every bride's individual beauty and unique personal charm. These gowns are in demand all around the world.",
 				featureOrExclusive: "exclusive",
 				mainImage: "Images/Collection_large/Venus_1.jpg",
+				link: "venus.html",
 				gallery: [
 					{
 						img: "Images/Collection_large/Venus_1.jpg",
@@ -738,6 +742,7 @@ angular.module('DesignerValue', [])
 				description: "Starting out in Barcelona and opening one of the world's most prestigious bridalwear shows - Barecelona Bridal Week, this brand soon spread throughout Spain and the rest of the world. Today it still offers innovative designs created from the highest quality fabrics.",
 				featureOrExclusive: "feature",
 				mainImage: "Images/Collection_large/RosaClaraKnot39.jpg",
+				link: "rosaClara.html",
 				gallery: [
 					{
 						img: "Images/Collection_large/RosaClaraKnot39.jpg",
@@ -958,6 +963,7 @@ angular.module('DesignerValue', [])
 				description: " View more selection and designer dresses at our salon in New York City",
 				featureOrExclusive: "feature",
 				mainImage: "Images/Collection_large/AlfredAngeloCinderellaPlatinum.jpg",
+				link: "additionalDesigner.html",
 				gallery: [
 					{
 						img: "Images/Collection_large/AlfredAngeloCinderellaPlatinum.jpg",
@@ -1296,6 +1302,7 @@ angular.module('DesignerValue', [])
 				description: "Sophisticated, classic style, with a modern approach and exquisite attention to detail. Couture gowns hand-crafted in the USA, using the finest fabrics, delicate embroideries, intricate draping and dramatic silhouettes.",
 				featureOrExclusive: "exclusive",
 				mainImage: "Images/Collection_large/HUPX9531.jpg",
+				link: "judeJowlison.html",
 				gallery: [
 					{
 						img: "Images/Collection_large/HUPX9531.jpg",
@@ -1646,45 +1653,52 @@ angular.module('DesignerValue', [])
 			},
 		])
 
-.value('featuresNameArray', [
-		{ 
-			name: "Eddy K",
-			mainImage: "Images/Collection_large/AK160_full.jpg",
-			description: "Designed in Milan, the fashion capital of the world, and manufactured with the highest quality fabrics. Sophisticated couture gowns and elegant destination dresses are made with the highest attention to detail that flatters every figure, taste, and occasion."
-		},
-		{
-			name: "Justin Alexander",
-			mainImage: "Images/Collection_large/JustinAlexander_3.png",
-			description: "One of America's and Europe's most influential producers of wedding fashions since 1949, blending contemporary style with classic details. Gowns that create a timeless romantic look with lavish lace, memorable details, and stunning silhouettes. If you love Grace Kelly, Audrey Hepburn, or Jackie Kennedy, these designs are perfect for you."
-		},
-		{
-			name: "Rosa Clará",
-			mainImage: "Images/Collection_large/RosaClaraKnot39.jpg",
-			description: "Starting out in Barcelona and opening one of the world's most prestigious bridalwear shows - Barecelona Bridal Week, this brand soon spread throughout Spain and the rest of the world. Today it still offers innovative designs created from the highest quality fabrics."
-		},
-		{
-			name: "Additional Designers",
-			mainImage: "Images/Collection_large/AlfredAngeloCinderellaPlatinum.jpg",
-			description: "View more selection and designer dresses at our salon in New York City"
-		} 
-	])
+// .value('featuresNameArray', [
+// 		{ 
+// 			name: "Eddy K",
+// 			mainImage: "Images/Collection_large/AK160_full.jpg",
+// 			description: "Designed in Milan, the fashion capital of the world, and manufactured with the highest quality fabrics. Sophisticated couture gowns and elegant destination dresses are made with the highest attention to detail that flatters every figure, taste, and occasion.",
+// 			link: "eddieK.html"
+// 		},
+// 		{
+// 			name: "Justin Alexander",
+// 			mainImage: "Images/Collection_large/JustinAlexander_3.png",
+// 			description: "One of America's and Europe's most influential producers of wedding fashions since 1949, blending contemporary style with classic details. Gowns that create a timeless romantic look with lavish lace, memorable details, and stunning silhouettes. If you love Grace Kelly, Audrey Hepburn, or Jackie Kennedy, these designs are perfect for you.",
+// 			link: "justinAlexander.html"
+// 		},
+// 		{
+// 			name: "Rosa Clará",
+// 			mainImage: "Images/Collection_large/RosaClaraKnot39.jpg",
+// 			description: "Starting out in Barcelona and opening one of the world's most prestigious bridalwear shows - Barecelona Bridal Week, this brand soon spread throughout Spain and the rest of the world. Today it still offers innovative designs created from the highest quality fabrics.",
+// 			link: "rosaClara.html"
+// 		},
+// 		{
+// 			name: "Additional Designers",
+// 			mainImage: "Images/Collection_large/AlfredAngeloCinderellaPlatinum.jpg",
+// 			description: "View more selection and designer dresses at our salon in New York City",
+// 			link: "additionalDesigner.html"
+// 		} 
+// 	])
 
-.value('exclusiveNameArray', [   
-		{ 
-			name: "Jude Jowilson",
-			mainImage: "Images/Collection_large/HUPX9531.jpg",
-			description: "Sophisticated, classic style, with a modern approach and exquisite attention to detail. Couture gowns hand-crafted in the USA, using the finest fabrics, delicate embroideries, intricate draping and dramatic silhouettes."
-		},
-		{
-			name: "Nicole Spose",
-			mainImage: "Images/Collection_large/nicole-spose-NIAB17092.jpg",
-			description: "Nicole Spose has collections that speak of a fresh and young fashion, that dictate trends, while maintaining quality and tailoring. Exclusively at our salon in New York City"
-		} ,
-		{
-			name: "Venus", 
-			mainImage: "Images/Collection_large/Venus_1.jpg",
-			description: "Timeless and romantic details come together to create a vast array of styles for every bride's individual beauty and unique personal charm. These gowns are in demand all around the world."
-		} 
-	])
+// .value('exclusiveNameArray', [   
+// 		{ 
+// 			name: "Jude Jowilson",
+// 			mainImage: "Images/Collection_large/HUPX9531.jpg",
+// 			description: "Sophisticated, classic style, with a modern approach and exquisite attention to detail. Couture gowns hand-crafted in the USA, using the finest fabrics, delicate embroideries, intricate draping and dramatic silhouettes."
+// 			link: "judeJowlison.html"
+// 		},
+// 		{
+// 			name: "Nicole Spose",
+// 			mainImage: "Images/Collection_large/nicole-spose-NIAB17092.jpg",
+// 			description: "Nicole Spose has collections that speak of a fresh and young fashion, that dictate trends, while maintaining quality and tailoring. Exclusively at our salon in New York City",
+// 			link: "nicolespose.html"
+// 		} ,
+// 		{
+// 			name: "Venus", 
+// 			mainImage: "Images/Collection_large/Venus_1.jpg",
+// 			description: "Timeless and romantic details come together to create a vast array of styles for every bride's individual beauty and unique personal charm. These gowns are in demand all around the world.",
+// 			link: "venus.html"
+// 		} 
+// 	])
 
 })();
