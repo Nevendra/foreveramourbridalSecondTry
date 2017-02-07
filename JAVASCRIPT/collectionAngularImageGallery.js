@@ -21,23 +21,16 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
    	}
 
    	self.styles;
+   	self.feature = "feature";
+   	self.exclusive = "exclusive";
    	self.featureDesignerNames = featuresNameArray;
    	self.exclusiveDesignerNames = exclusiveNameArray;
-   	self.setValueArrays = true;
-   	self.featureDesignerList;
-   	self.exclusiveDesignerList;
-   	self.designersArray;
-   	self.setArray = function(){
-		if(self.setValueArrays === true) {
-			self.designersArray = new DesignerListFactory(CollectionArray);
-			self.featureDesignerList = self.designersArray.onlyFeature();
-			self.exclusiveDesignerList = self.designersArray.onlyExclusive();
-
-		}
-	};
-
-	self.setArray();
-	self.viewFeatured = false;
+	self.designersArray = new DesignerListFactory(CollectionArray);
+	self.featureDesignerList = self.designersArray.onlyFeature();
+	self.exclusiveDesignerList = self.designersArray.onlyExclusive();
+	self.clickedFeature = false;
+	self.clickedExclusive = false;
+	self.viewFeature = false;
 	self.viewExclusive = false;
 	self.mainHtml = true;
 	self.selectedImage;
@@ -47,15 +40,15 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 	self.records_per_page = 9;
 	self.featureDesigner;
 	self.exclusiveDesigner;
-	self.featureDesignerName;
-	self.exclusiveDesignerName;
 	self.featureSelected = "feature";
 	self.exclusiveSelected = "exclusive";
-	self.viewGallery = function(designer, page, featureOrExclusive) {
+	self.viewGallery = function(designer, page, featureOrExclusive, designerImage, designerAbout) {
 		if(featureOrExclusive === "feature"){
-			self.viewFeatured = true;
+			self.viewFeature = true;
 			self.featureImages = PaginateDesigner.PaginateDesignerFunction(designer, page);
 			self.featureDesignerName = designer;
+			self.featureDesignerImage = designerImage;
+			self.featureDesignerAbout = designerAbout;
 			self.featureFullImages = self.designersArray.viewDesignerGallery(designer);
 			self.featurePages = Math.ceil(self.featureFullImages.length / self.records_per_page);
 			self.featureDesigner = designer;
@@ -64,33 +57,56 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 			self.viewExclusive = true;
 			self.exclusiveImages = PaginateDesigner.PaginateDesignerFunction(designer, page);
 			self.exclusiveDesignerName = designer;
+			self.exclusiveDesignerImage = designerImage;
+			self.exclusiveDesignerAbout = designerAbout;
 			self.exclusiveFullImages = self.designersArray.viewDesignerGallery(designer);
 			self.exclusivePages = Math.ceil(self.exclusiveFullImages.length / self.records_per_page);
 			self.exclusiveDesigner = designer;
 		}
-		self.imageToBeViewed = true;
 		self.mainHtml = false;
 	};
 
-	self.closeDesignerImageGallery = function(designer) {
-		self.mainHtml = true;
-		self.imageToBeViewed = false;
+	self.closeDesignerImageGallery = function() {
 		self.clickedThumbNail = false
 		self.current_page = 1;
 		self.designerFullImages;
 		self.numPages;
-	   	self.scrollToDesigner();
+		self.viewFeature = false;
+		self.viewExclusive = false;
 	};
 
 	self.viewLargeImage = function(image) {
 		self.selectedImage = image;
-		self.imageToBeViewed = false;
+		console.log(self.selectedImage)
 		self.clickedThumbNail = true;
 	}
 
 	self.closeDesignerImageGallerySelectedImage = function() {
 		self.clickedThumbNail = false;
-		self.imageToBeViewed = true;
+	}
+
+	self.clickedExclusiveOrFeature = function(clicked){
+		console.log("hey");
+		self.choice = clicked;
+		self.scrollTo();
+		console.log(self.choice);
+		if(self.choice === "feature"){
+			self.clickedFeature = true;
+			self.clickedExclusive = false;
+			self.mainHtml = false;
+			self.viewFeature = false;
+			self.viewExclusive = false;
+			self.selectedImage;
+			self.clickedThumbNail = false;
+		} else if (self.choice === "exclusive"){
+			self.clickedFeature = false;
+			self.clickedExclusive = true;
+			self.mainHtml = false;
+			self.viewFeature = false;
+			self.viewExclusive = false;
+			self.selectedImage;
+			self.clickedThumbNail = false;
+		}
 	}
 
 	self.prevPage = function(featureOrExclusive, designer, array) {
