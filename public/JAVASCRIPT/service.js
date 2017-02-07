@@ -8,17 +8,6 @@ angular.module('DesignerService', ['DesignerValue'])
 		this.designerArray = array/// ends designer array
 	};/// ends designerlistFactory function()
 
-	DesignerListFactory.prototype.filterImages = function(){
-		this.filterImagesArray = [];
-		for(var i = 0; i < this.designerArray.length; i ++){
-			this.designers = this.designerArray[i].gallery;
-			for(var j = 0; j < this.designers.length; j ++){  
-				this.designersGallery = this.designers[j];
-				this.filterImagesArray.push(this.designersGallery);
-			}
-		}
-	};
-
 	DesignerListFactory.prototype.onlyExclusive = function(){
 		this.exclusive = [];
 		for(var i = 0; i < this.designerArray.length; i ++){
@@ -45,43 +34,23 @@ angular.module('DesignerService', ['DesignerValue'])
 		return this.featureArray;
 	};
 
-	DesignerListFactory.prototype.removeJude = function(){
-		this.arrayWithoutJude = [];
+	DesignerListFactory.prototype.getDesigner = function(name){
+		this.additionalDesignerArray = [];
+		this.additionalDesignerGalleryArray;
+		this.additionalDesignerArrayAndGallery;
 		for(var i = 0; i < this.designerArray.length; i ++){
-			this.name = this.designerArray[i];
-			if(this.name.name != "Jude Jowilson") {
-				this.notJude = this.name;
-				this.arrayWithoutJude.push(this.notJude);
+			this.designerObject = this.designerArray[i];
+			if(this.designerObject.name === name) {
+				this.additionalDesignerArray.push(this.designerObject);
 			}
 		}
-		this.designerArray = this.arrayWithoutJude;
-		return this.designerArray;
-	};
 
-	DesignerListFactory.prototype.justJude = function(){
-		this.justJudeArray = [];
-		for(var i = 0; i < this.designerArray.length; i ++){
-			this.name = this.designerArray[i];
-			if(this.name.name === "Jude Jowilson") {
-				this.yesJude = this.name;
-				this.justJudeArray.push(this.yesJude);
-			}
+		for(var i = 0; i < this.additionalDesignerArray.length; i ++){
+			this.additionalDesignerGalleryArray = this.additionalDesignerArray[i].gallery;
 		}
-		this.designerArray = this.justJudeArray;
-		return this.designerArray;
-	};
 
-	DesignerListFactory.prototype.viewDesignerGallery = function(designer) {
-		// console.log(this.designerArray);
-		for(var i = 0; i < this.designerArray.length; i++ ){
-			this.name = this.designerArray[i];
-			if(this.name.name === designer){
-				this.designGalleryArray = [];
-				this.nameGallery = this.name.gallery;
-				this.designGalleryArray = this.nameGallery;
-			}
-		}
-		return this.designGalleryArray;
+		this.additionalDesignerArrayAndGallery = [this.additionalDesignerArray, this.additionalDesignerGalleryArray];
+		return this.additionalDesignerArrayAndGallery;
 	};
 
 	return DesignerListFactory;
@@ -100,6 +69,18 @@ angular.module('DesignerService', ['DesignerValue'])
   		return self.designerPaginateArray;
 	};
 
+
+	self.ChangeImage = function(array, index){
+		self.galleryArray = array;
+		self.galleryNewImageObject;
+		self.galleryNewImage;
+		for(var i = 0; i < self.galleryArray.length; i++){
+			self.galleryImages = self.galleryArray[i];
+				self.galleryNewImage = self.galleryArray[index].img;
+		}
+
+		return self.galleryNewImage;
+	}
 
 })
 
