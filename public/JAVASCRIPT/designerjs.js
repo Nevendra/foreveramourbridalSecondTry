@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+
 	var mainContent = $(".mainContent");
 	var designerAbout = $(".designerAbout").outerHeight();
 	var designerGallery = $(".designerGallery").outerHeight();
