@@ -13,9 +13,6 @@ $(document).ready(function(){
 	var slidesDesignerName = sliderContainer.find(".designerSlides p");
 		slidesDesignerName.css("width", slides.width());
 
-	var navUl = $("nav ul");
-	var navLi = $("nav ul li");
-	navLi.css("width", navUl.width() / 7);
 
 	var footerContact = $('.footerContact').outerWidth(true);
 	var footerSocialMedia = $('.footerSocialMedia').outerWidth(true);
