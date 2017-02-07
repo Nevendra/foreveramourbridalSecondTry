@@ -76,7 +76,6 @@ nav ul li a {
     padding-left: 24vw;
 }
 /*.floatRight {
-
 }*/
 .appointment {
   text-decoration: none;
@@ -659,5 +658,3 @@ nav.fill ul li a:hover:after {
 .btn:hover{
   /*color:white;*/
 }
-
-
