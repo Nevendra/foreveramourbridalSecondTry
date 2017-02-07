@@ -19,7 +19,7 @@ app.set('views', 'views');
 app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/index', indexRouter);
+app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/custom', customRouter);
 app.use('/contact', contactRouter);
