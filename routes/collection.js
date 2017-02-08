@@ -5,7 +5,6 @@ collectionRouter.get('/', (req, res) => {
   });
 });
 
-<<<<<<< HEAD
 collectionRouter.get('/additionalDesigners', (req, res) => {
   res.render('Collection/additionalDesigners.ejs', {
   });
