@@ -26,4 +26,40 @@ app.use('/contact', contactRouter);
 app.use('/appointment', apptRouter);
 app.use('/collection', collectionRouter);
 
+
+app.get('/venus', (req, res) => {
+  res.render('Collection/venus.ejs', {
+  });
+});
+
+app.get('/additionalDesigner', (req, res) => {
+  res.render('Collection/additionalDesigners.ejs', {
+  });
+});
+
+app.get('/eddiek', (req, res) => {
+  res.render('Collection/eddiek.ejs', {
+  });
+});
+
+app.get('/judeJowlison', (req, res) => {
+  res.render('Collection/judeJowlison.ejs', {
+  });
+});
+
+app.get('/justinAlexander', (req, res) => {
+  res.render('Collection/justinAlexander.ejs', {
+  });
+});
+
+app.get('/nicolespose', (req, res) => {
+  res.render('Collection/nicolespose.ejs', {
+  });
+});
+
+app.get('/rosaClara', (req, res) => {
+  res.render('Collection/rosaClara.ejs', {
+  });
+});
+
 app.listen(PORT, () => console.log('Server running on port', PORT));
