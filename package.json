@@ -4,9 +4,11 @@
   "description": "Forever Amour Bridal Boutique Website",
   "main": "server.js",
   "dependencies": {
+    "cookie-parser": "^1.4.3",
     "dotenv": "^4.0.0",
     "ejs": "^2.5.5",
     "express": "^4.14.1",
+    "express-session": "^1.15.0",
     "jquery": "^3.1.1",
     "morgan": "^1.7.0",
     "path": "^0.12.7"
