@@ -6,7 +6,7 @@ collectionRouter.get('/', (req, res) => {
 });
 
 collectionRouter.get('/additionalDesigners', (req, res) => {
-  res.render('Collection/additionalDesigner.ejs', {
+  res.render('Collection/additionalDesigners.ejs', {
   });
 });
 
@@ -39,4 +39,6 @@ collectionRouter.get('/rosaClara', (req, res) => {
   res.render('Collection/rosaClara.ejs', {
   });
 });
+
+
 module.exports = collectionRouter;

@@ -11,6 +11,7 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
       $anchorScroll();
    	}
 
+
 	self.scrollToDesigner = function() {
      var newHash = "des" + self.designerId;
       if ($location.hash() !== newHash) {
