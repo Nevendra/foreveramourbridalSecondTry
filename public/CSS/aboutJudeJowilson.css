@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	padding-top: 101px;
+}
+p {
+	padding: 0px;
+	margin: 0px;
+}
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+li {
+	padding: 0px;
+	margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0px;
+	margin: 0px;
+}
+.floatLeft {
+	float: left;
+}
+.floatRight {
+	float: right;
+}
+
+nav {
+	width: 100%;
+	height: 104px;
+	border-bottom: solid 1px #998100;
+	position: fixed;
+	z-index: 50;
+	top: 0px;
+	background-color: white;
+	-webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+}
+nav ul {
+   width: 100%;
+    height: 0px;
+  text-align: center;
+	margin-left: -25px;
+ 
+}
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: -27px;
+    margin: 9.5px;
+    padding: initial;
+}
+
+
+nav ul li a {
+	color: #4ab2b2;
+	text-decoration: none;
+	font-size: 17px;
+}
+.clear {
+	clear: both;;
+}
+.float {
+    float: left;
+}
+.appointment {
+	float: right;
+	  width: 23%;
+    margin-right: 57px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: larger;
+    border-radius: 5px;
+    background-color:white;
+
+}
+.appointment:hover{
+  color:white;
+  background-color:#1799B5 ;
+}
+
+.appointment p{
+  color:white;
+}
+:link {
+    text-decoration:none;
+    color:green;
+}
+
+.appointment a{
+  color:black;
+}
+
+.logo {
+  padding-top: 120px;
+  text-align: center;
+  position: absolute;
+  left: 130px;
+}
+
+.logo a{
+  font-family: "Great Vibes", sans-serif;
+  font-size: 34px;
+  padding-right: 10px;
+  color: #1db2a3;
+  text-decoration: none;
+}
+
+.logo span {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 60px;
+  padding-right: 60px;
+  color: #1db2a3;
+  text-decoration: none;
+}
+.logoNav {
+  text-align: center;
+  padding-top: 2px;
+}
+.logoNav p {
+  color: #1799B5;
+}
+.logoNav a{
+  font-family: "Great Vibes", sans-serif;
+  font-size: 40px;
+  padding-right: 60px;
+  text-decoration: none;
+  color: #1799B5;
+}
+.btn {
+  color: rgb(125, 114, 81);
+
+    font-weight: 400;
+    line-height: 22px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 151px;
+    font-size: smaller;
+    padding: -16px;
+
+}
+/*  @media(min-width: 400px) {
+    display: inline-block;
+    margin-right: 2.5em;
+
+    &:nth-of-type(even) {
+      margin-right: 0;
+    }
+  }
+
+  @media(min-width: 600px) {
+
+    &:nth-of-type(even) {
+      margin-right: 2.5em;
+    }
+
+    &:nth-of-type(5) {
+      margin-right: 0;
+    }
+
+  }
+
+  &:hover { text-decoration: none; }
+  }
+*/
+
+
+.btn-4 {
+  overflow: visible;
+    position: absolute;
+}
+.btn-4 span {
+  z-index: 20;
+}
+.btn-4:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.btn-4:hover:after {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover{
+  color:white;
+}
+.mainContent {
+  margin-top: 50px;
+  position: relative;
+}
+.headerContent {
+  text-align: center;
+  margin: 50px;
+}
+
+.mainTitle  {
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  color: #ef8e89;
+}
+
+.subTitle {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #ef8e89;
+}
+.content {
+  height: 450px;
+}
+.ladyImage {
+  float: left;
+  width: 50%;
+  padding:  0px 5px;
+  height: 200px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.ladyImage img {
+  width: 100%;
+}
+
+.judeAbout {
+
+}
+
+.judeAbout p {
+  font-size: 17px;
+  text-align: left;
+  padding: 0px 20px;
+  margin-bottom: 50px;
+  font-family: 'Open Sans', sans-serif;
+  color: #1799B5;
+}
+
+.judeImage {
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.judeImage img {
+  width: 100%;
+}
+
+/********************************* 375PX *************************************************/ 
+
+@media screen and (min-width: 375px) {
+ .judeAbout p {
+    margin-bottom: 60px;
+  }
+
+  .ladyImage {
+    height: 190px;
+  }
+
+}
+/********************************* 400PX *************************************************/ 
+
+@media screen and (min-width: 400px) {
+ .judeAbout p {
+    margin-bottom: 40px;
+  }
+
+  .ladyImage {
+    height: 305px;
+  }
+
+}
+
+/********************************* 500PX *************************************************/ 
+
+
+@media screen and (min-width: 500px) {
+
+  .ladyImage {
+    width: 50%;
+    
+  }
+
+  .judeAbout {
+    width: 50%;
+    float: left;
+  }
+
+  .judeImage {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 25%;
+  }
+
+
+}
+
+
+/********************************** 769PX *************************************************/
+
+
+@media screen and (min-width: 700px) {
+
+  .ladyImage {
+    width: 33.33%;
+    height: 350px;
+    overflow: hidden;
+    margin: 0px;
+  }
+
+  .judeAbout {
+    width: 33.33%;
+    float: left;
+  }
+
+  .judeImage {
+    width: 33.33%;
+    float: left;
+    margin: 0px;
+    height: 350px;
+    overflow: hidden;
+  }
+
+
+}
+
+
+
+
+/********************************** 900PX *************************************************/
+  
+/*
+@media screen and (min-width: 845px) {
+
+  .ladyImage {
+    width: 33.33%;
+
+  }
+
+  .judeAbout {
+    width: 33.33%;
+    float: left;
+  }
+
+  .judeImage {
+    width: 33.33%;
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+
+}*/
+
+/********************************** 1000PX *************************************************/
+  
+/*@media screen and (min-width: 1000px) {
+
+
+
+}*/
+
+/********************************** 1200px *************************************************/
+@media screen and (min-width: 1200px) {
+  
+  .judeAbout {
+    padding-top: 50px;
+  }
+
+}

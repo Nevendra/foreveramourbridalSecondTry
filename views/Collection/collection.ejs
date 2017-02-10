@@ -9,6 +9,7 @@
 
 	<meta name="charset" content="utf-8">
 	<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 	<meta name="description" content="Large selection of designer wedding gowns at beautiful prices, as well as veils and belts to match. Justin Alexander, Rosa Clara, Symphony, Jude Jowilson and more.">
 	<meta name="keywords" content="collection, gallery, justin alexander, sposa, rosa clara, jude, jowilson, symphony">
@@ -81,7 +82,7 @@
 
 				<div class="info coral" ng-click="ctrl.clickedExclusiveOrFeature(ctrl.exclusive)">
 					<p>Exclusive/Custom </p>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque adipisci expedita, fugiat corporis voluptatibus! Labore quaerat molestias, ab nostrum voluptas deleniti. Laudantium voluptate autem nihil error tenetur adipisci corrupti explicabo.</h4>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque adipisci expedita, fugiat corporis voluptatibus! Labore quaerat molestias, ab nostrum voluptas deleniti. Laudantium voluptate autem nihil error tenetur adipisci corrupti explicabo.</p>
 				</div>
 
 
@@ -105,13 +106,13 @@
 			<div class="featuredContainer">
 				<div class="info" ng-click="ctrl.clickedExclusiveOrFeature(ctrl.feature)">
 					<p>Featured</p>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab maxime aut inventore nostrum harum impedit ut quis possimus autem at, adipisci provident et excepturi velit ipsam distinctio? Sit, molestias!</h4>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab maxime aut inventore nostrum harum impedit ut quis possimus autem at, adipisci provident et excepturi velit ipsam distinctio? Sit, molestias!</p>
 				</div>
 				<div class="designersWrapper feature" ng-if="ctrl.viewFeature == false">
 
 						<ul class="designerSliderContainer">
-							<li class="designerSlides" ng-repeat="designer in ctrl.featureDesignerList">
-								<div>
+							<li class="designerSlides" ng-repeat="designer in ctrl.featureDesignerList" >
+								<div ng-class="[designer.text]" >
 									<p ng-bind="designer.name"></p>
 								</div>
 								<a ng-href="{{designer.link}}"><img src="{{designer.mainImage}}"></a>
@@ -123,50 +124,6 @@
 		</div><!-- end mainContainer -->
 		<div class="clear"></div>
 
-		<footer>
-			<div class="footerinfo">
-				<div class="footerContact floatLeft">
-					<h3>Contact &amp; Info</h3>
-					<p>
-						212 - 486 -2900
-					</p>
-					<p>
-						1089 Second Ave.
-						Suite 2
-						<br>
-						New York, NY 10022
-					</p>
-					<p>
-						stylist@foreveramourbridal.com
-					</p>
-				</div>
-				<div class="footerSocialMedia floatLeft">
-					<h3>Follow Us</h3>
-					<div id="footer-social">
-						<a class="socialLink" href="https://www.theknot.com/marketplace/forever-amour-bridal-boutique-new-york-ny-546587" target="_blank">
-							<img id="knotIcon" src="Images/SocialMediaIcons/Knot_SocialIcon_transparent.png" alt="The Knot Icon" title="The Knot Wedding Network">
-						</a>
-
-						<a class="socialLink" href="https://www.facebook.com/ForeverAmourBridalDresses/" target="_blank">
-							<img id="fbIcon" src="Images/SocialMediaIcons/FB_SocialIcon_transparent.png" alt="Facebook Icon" title="Facebook">
-						</a>
-
-						<a class="socialLink" href="https://twitter.com/foreveramournyc" target="_blank">
-							<img id="twitterIcon" src="Images/SocialMediaIcons/Twitter_SocialIcon_transparent.png" alt="Twitter Icon" title="Twitter">
-						</a>
-
-						<a class="socialLink" href="https://www.pinterest.com/foreveramour/" target="_blank">
-							<img id="pinterestIcon" src="Images/SocialMediaIcons/Pinterest_SocialIcon_transparent.png" alt="Pinterest Icon" title="Pinterest">
-						</a>
-
-						<a class="socialLink" href="https://www.instagram.com/foreveramourbridalboutique/" target="_blank">
-							<img id="instagramIcon" src="Images/SocialMediaIcons/Instagram_SocialIcon_transparent.png" alt="Instagram Icon" title="Instagram">
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="clear"></div>
-		</footer>
 
 
 	</div><!-- end controller -->
