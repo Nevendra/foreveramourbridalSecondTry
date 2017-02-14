@@ -1,5 +1,6 @@
 * {
   margin:-4px auto;
+  box-sizing: border-box;
 }
 body {
     padding-top: 100px;
@@ -10,18 +11,13 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 p {
 	padding: 0px;
 	margin: 0px;
 }
-
 li {
 	padding: 0px;
 	margin: 0px;
-}
- * {
-	box-sizing: border-box;
 }
 
 /* NAVIGATION */
@@ -50,20 +46,17 @@ nav ul li {
     margin: 6.5px;
     padding: initial;
 }
-
-
 nav ul li a {
 	color: #4ab2b2;
 	text-decoration: none;
 	font-size: 17px;
  }
 
+ /*LI CLASS*/
 .currentPage a {
 	color: white;
 }
-.clear {
-	clear: both;
-}
+
 .float {
     float: left;
     padding-left: 24vw;

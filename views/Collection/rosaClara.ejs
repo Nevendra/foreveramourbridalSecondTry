@@ -5,11 +5,12 @@
 
 
 	<meta name="charset" content="utf-8">
-	<meta http-equiv="content-Type" content="text/html; charset=utf-8"> 
+	<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 	<link rel="icon" type="image/ico" href="Images/BridalFavicon.ico">
 
-	<link rel="stylesheet" type="text/css" href="CSS/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/font-awesome.css">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
@@ -17,11 +18,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
 	<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-	<script type="text/javascript" src="JAVASCRIPT/value.js"></script>
-	<script type="text/javascript" src="JAVASCRIPT/service.js"></script>
-    <script rel="stylesheet" type="text/javascript" src="JAVASCRIPT/collectionAngularImageGallery.js"></script>
-	<script src="JAVASCRIPT/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="JAVASCRIPT/designerjs.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../JAVASCRIPT/value.js"></script>
+	<script type="text/javascript" src="../JAVASCRIPT/service.js"></script>
+    <script rel="stylesheet" type="text/javascript" src="../JAVASCRIPT/collectionAngularImageGallery.js"></script>
+	<script src="../JAVASCRIPT/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../JAVASCRIPT/designerjs.js" type="text/javascript" charset="utf-8"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -32,38 +33,39 @@
 		ga('send', 'pageview');
 	</script>
 
-	<link href="CSS/designer.css" rel="stylesheet" type="text/css">
+	<link href="../CSS/designer.css" rel="stylesheet" type="text/css">
 </head>
-<body ng-app="CollectionImageGallery">
+<body ng-app="CollectionImageGallery" ng-controller="CollectionImageGalleryController as ctrl">
 	<div class="additionalNav">
 		<i class=" closeAdditionalNav fa fa-bars" aria-hidden="true"></i>
 		<ul>
-			<li><a href="additionalDesigner.html">Additional Designer</a></li>
-			<li><a href="eddiek.html">Eddie K</a></li>
-			<li><a href="judeJowlison.html">Jude Jowilson</a></li>
-			<li><a href="justinAlexander.html">Justin Alexander</a></li>
-			<li><a href="nicolespose.html">Nicole Spose</a></li>
-			<li><a href="rosaClara.html">Rosa Clara</a></li>
-			<li><a href="venus.html">Venus</a></li>
+
+			<li><a href="additionalDesigners">Additional Designer</a></li>
+			<li><a href="eddiek">Eddie K</a></li>
+			<li><a href="judeJowlison">Jude Jowilson</a></li>
+			<li><a href="justinAlexander">Justin Alexander</a></li>
+			<li><a href="nicolespose">Nicole Spose</a></li>
+			<li><a href="rosaClara">Rosa Clara</a></li>
+			<li><a href="venus">Venus</a></li>
 		</ul>
 	</div>
 	<nav>
 	<div class="logoNav">
-		<p><a href="index.html">Forever Amour Bridal Boutique</a><p>
+		<p><a href="/">Forever Amour Bridal Boutique</a><p>
 		</div>
 
 	<ul>
-		  	<li><a href="index.html" class="btn btn-4">Home</a></li>
-	     	<li><a href="collection.html" class="btn btn-4">Collection</a></li>
-		 	<li><a href="custom.html" class="btn btn-4">Custom Made</a></li>
-		 	<li><a href="contact.html" class="btn btn-4">Contact</a></li>
-		   	<li><a href="about.html" class="btn btn-4">About</a></li>
+		  	<li><a href="/" class="btn btn-4">Home</a></li>
+	     	<li><a href="/collection" class="btn btn-4">Collection</a></li>
+		 		<li><a href="/custom" class="btn btn-4">Custom Made</a></li>
+		 		<li><a href="/contact" class="btn btn-4">Contact</a></li>
+		   	<li><a href="/about" class="btn btn-4">About</a></li>
 		   	<li><a href="" class="btn btn-4">Start Here</a></li>
 
 	 </ul>
 
 		<div class="appointment">
-	  		<a href="appointment.html">Make An Appointment</a>
+	  		<a href="/appointment">Make An Appointment</a>
 		</div>
 
 	   <!--  <div class="clear">
@@ -71,27 +73,30 @@
 
 	</nav>
 
-	<div ng-controller="CollectionImageGalleryController as ctrl">
+	<div>
 		<div class="mainContent">
-			<div class="additionalDesigner">
+			<div class="additionalDesigner" ng-if="ctrl.mainHtml == true">
 				<p>Additional Designers<span>               </span><span><i class="fa fa-bars" aria-hidden="true"></i></span></p>
 			</div>
-			<div class="designerAbout float">
-				<div ng-repeat=" designer in ctrl.justinAlexander[0]">
+			<div class="designerAbout" ng-if="ctrl.mainHtml == true">
+				<div ng-repeat=" designer in ctrl.rosaClara[0]">
 					<h1 ng-bind="designer.name"></h1>
 					<p ng-bind="designer.description"></p>
 					<img src="{{designer.mainImage}}">
 				</div>
 			</div>
-			<div class="designerGallery floatRight">
-				<div class="galleryBox float" ng-repeat=" gallery in ctrl.justinAlexander[1]">
-					<img class="clickedImage" ng-click="ctrl.viewLargeImage(gallery.img, ctrl.justinAlexander[1], $index)" src="{{gallery.img}}">
+			<div class="designerGallery" ng-if="ctrl.mainHtml == true">
+				<div class="galleryBox float" ng-repeat=" gallery in ctrl.rosaClara[1]">
+					<img class="clickedImage" src="{{gallery.img}}" ng-click="ctrl.viewLargeImage(gallery.img, ctrl.rosaClara[1], $index)">
 					<p ng-bind="gallery.designerName"></p>
 				</div>
-				<div class="clear"></div>
 			</div>
 			<div class="clear"></div>
 		</div>
+
+		<p class="previousMain">Previous</p>
+			
+		<p class="nextMain">Next</p>
 
 		<div class="selectedImage" ng-if="ctrl.clickedThumbNail == true">
 			<div class="selectedImageContent">
@@ -103,7 +108,6 @@
 			<div class="clear"></div>
 		</div>
 	</div>
-
 
 </body>
 </html>

@@ -10,6 +10,7 @@ const customRouter = require('./routes/custom');
 const contactRouter = require('./routes/contact');
 const apptRouter = require('./routes/appointment');
 const collectionRouter = require('./routes/collection');
+const aboutJudeJowilsonRouter = require('./routes/aboutJudeJowilson');
 
 const PORT    = process.argv[2] || process.env.port || 3000;
 
@@ -25,5 +26,6 @@ app.use('/custom', customRouter);
 app.use('/contact', contactRouter);
 app.use('/appointment', apptRouter);
 app.use('/collection', collectionRouter);
+app.use('/aboutJudeJowilson', aboutJudeJowilsonRouter);
 
 app.listen(PORT, () => console.log('Server running on port', PORT));

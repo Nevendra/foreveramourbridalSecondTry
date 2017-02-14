@@ -11,6 +11,7 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
       $anchorScroll();
    	}
 
+
 	self.scrollToDesigner = function() {
      var newHash = "des" + self.designerId;
       if ($location.hash() !== newHash) {
@@ -61,13 +62,15 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 		self.selectedArray = array;
 		self.selectedIndex = index;
 		self.clickedThumbNail = true;
+		self.mainHtml = false;
 	}
 
 	self.closeDesignerImageGallerySelectedImage = function() {
 		self.clickedThumbNail = false;
+		self.mainHtml = true;
 	}
 
-	self.prevPage = function(array) {
+	self.prevImage = function(array) {
 		self.currentArray = array;
 		if(self.selectedIndex === 0){
 			self.selectedIndex = self.currentArray.length - 1;
@@ -82,7 +85,7 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 
 	}
 
-	self.nextPage = function(array) {
+	self.nextImage = function(array) {
 		self.currentArray = array;
 		if(self.selectedIndex === self.currentArray.length - 1){
 			self.selectedIndex = 0;
