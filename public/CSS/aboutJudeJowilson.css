@@ -228,15 +228,72 @@ nav ul li a {
   height: 450px;
 }
 .ladyImage {
-  float: left;
-  width: 50%;
-  padding:  0px 5px;
-  height: 200px;
-  overflow: hidden;
-  margin-right: 10px;
+width: 100%;
+  background-color: white;
+  background-image: url(../Images/judeAboutImage.jpg);
+  background-size: 100% 100%;
+  height: 400px;
+   color: #1799B5;
+   text-align: justify;
+   position: relative; 
+   background-repeat: no-repeat;
+   background-position: center;
+   padding-top: 160px;
+   margin-bottom: 20px;
 }
 
-.ladyImage img {
+.judeTitle {
+
+  color: #ef8e89;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.judeAbout {
+  padding: 10px;
+  background-color: rgba(255,255,255, 0.9);
+}
+
+.judeAbout .aboutText {
+  padding-bottom: 10px;
+}
+
+.judesLookBook {
+  padding-top: 100px;
+  float: right;
+}
+
+.lookBook {
+  height: 100px;
+  background-color: black;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.judeImage {
+  position: relative;
+}
+.judeImage img {
+  left: -99px;
+  position: absolute;
+}
+
+
+.lookBookOne {
+  background-image: url(../Images/judeLookBookUno.jpg);
+  background-size: cover;
+}
+
+.lookBookTwo {
+  background-image: url(../Images/judeLookBookDos.jpg);
+  background-size: cover;
+}
+
+.lookBookThree {
+  background-image: url(../Images/judeLookBookTres.jpg); 
+  background-size: cover;
+}
+
+/*.ladyImage img {
   width: 100%;
 }
 
@@ -262,11 +319,11 @@ nav ul li a {
 
 .judeImage img {
   width: 100%;
-}
+}*/
 
 /********************************* 375PX *************************************************/ 
 
-@media screen and (min-width: 375px) {
+/*@media screen and (min-width: 375px) {
  .judeAbout p {
     margin-bottom: 60px;
   }
@@ -275,115 +332,415 @@ nav ul li a {
     height: 190px;
   }
 
-}
+}*/
 /********************************* 400PX *************************************************/ 
 
 @media screen and (min-width: 400px) {
- .judeAbout p {
-    margin-bottom: 40px;
+ .judeAbout {
+
   }
 
   .ladyImage {
-    height: 305px;
+
+  }
+
+  .lookBook {
+    height: 110px;
+    background-color: black;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .lookBookOne {
+    background-image: url(../Images/judeLookBookUno.jpg);
+    background-size: cover;
   }
 
 }
 
 /********************************* 500PX *************************************************/ 
 
-
 @media screen and (min-width: 500px) {
+ .judeAbout {
+    padding: 15px;
+    float: right;
+    width: 60%;
+  }
 
   .ladyImage {
-    width: 50%;
+    height: 550px;
+    padding-top: 100px;
+    background-color: black;
+  }
+
+  .lookBook {
+    height: 120px;
+    background-color: black;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .judeImage img {
+    left: 0px;
+    position: absolute;
+    width: 250px;
+  }
+
+  .lookBookOne {
+    background-image: url(../Images/judeLookBookUno.jpg);
+    background-size: cover;
+  }
+}
+
+/********************************* 600PX *************************************************/ 
+
+
+@media screen and (min-width: 600px) {
+
+  .judeAbout {
     
   }
 
-  .judeAbout {
-    width: 50%;
-    float: left;
+  .ladyImage {
+
   }
 
-  .judeImage {
-    width: 50%;
-    float: left;
-    margin-top: 20px;
-    margin-left: 25%;
+  .judeTitle {
+
   }
 
+  .lookBook {
+    height: 170px;
+    background-color: black;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .judesLookBook {
+    float: right;
+    padding-top: 70px;
+  }
+
+  .lookBookOne {
+    background-image: url(../Images/judeLookBookUno.jpg);
+    background-size: cover;
+  }
 
 }
 
+
+/********************************** 700PX *************************************************/
+
+
+@media screen and (min-width: 700px) {
+  .judeAbout {
+     width: 50%;
+       height: 100%;
+     padding: 15px 30px;
+    padding-top: 30px;
+     background-color: white;
+     border: solid 1px rgb(125, 114, 81);
+  }
+
+  .ladyImage {
+    height: 600px;
+    background-size: 60% 100%;
+    background-position: left;
+    padding-top: 0px;
+  }
+
+  .judeTitle {
+    font-size: 17px;
+    margin-bottom: 70px;
+  }
+
+  .judeAbout .aboutText {
+    padding-bottom: 60px;
+  }
+
+  .lookBook {
+    height: 190px;
+    background-color: black;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .judesLookBook {
+    float: right;
+    padding-top: 45px;
+  }
+
+  .judeImage img {
+    position: absolute;
+    top: 0px;
+  }
+  .lookBookOne {
+    background-image: url(../Images/judeLookBookUno.jpg);
+    background-size: cover;
+  }
+}
 
 /********************************** 769PX *************************************************/
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 769px) {
+  .judeAbout {
+     width: 50%;
+       height: 100%;
+     padding: 15px 30px;
+    padding-top: 30px;
+     background-color: white;
+     border: solid 1px rgb(125, 114, 81);
+  }
 
   .ladyImage {
-    width: 33.33%;
-    height: 350px;
+    height: 600px;
+    background-size: 60% 100%;
+    background-position: left;
+    padding-top: 0px;
+  }
+
+  .judeTitle {
+    font-size: 17px;
+    margin-bottom: 70px;
+  }
+
+  .judeAbout .aboutText {
+    padding-bottom: 60px;
+  }
+
+  .lookBook {
+    height: 210px;
+    background-color: black;
+    margin-bottom: 10px;
     overflow: hidden;
-    margin: 0px;
+  }
+  .judesLookBook {
+    float: right;
+    padding-top: 15px;
   }
 
-  .judeAbout {
-    width: 33.33%;
-    float: left;
+  .judeImage img {
+    position: absolute;
+    top: 0px;
   }
 
-  .judeImage {
-    width: 33.33%;
-    float: left;
-    margin: 0px;
-    height: 350px;
-    overflow: hidden;
+  .lookBookOne {
+    background-image: url(../Images/judeLookBookUno.jpg);
+    background-size: cover;
   }
-
 
 }
+
+/********************************** 800PX *************************************************/
+
+
+@media screen and (min-width: 800px) {
+  .judeAbout {
+
+  }
+
+  .ladyImage {
+    height: 600px;
+  }
+
+  .judeTitle {
+
+  }
+
+  .lookBook {
+    height: 230px;
+    background-color: black;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .judesLookBook {
+    float: right;
+    padding-top: 0px;
+  }
+
+  .judeImage img {
+    position: absolute;
+    top: 15px;
+  }
+
+  .lookBookOne {
+    background-image: url(../Images/judeLookBookUno.jpg);
+    background-size: cover;
+  }
+
+}
+
 
 
 
 
 /********************************** 900PX *************************************************/
   
-/*
-@media screen and (min-width: 845px) {
 
-  .ladyImage {
-    width: 33.33%;
-
-  }
+@media screen and (min-width: 900px) {
 
   .judeAbout {
-    width: 33.33%;
-    float: left;
+
+ 
   }
 
-  .judeImage {
-    width: 33.33%;
-    float: left;
-    margin-top: 0px;
-    margin-left: 0px;
+  .judeAbout p {
   }
 
+  .ladyImage {
+    background-size: 60% 100%;
+  }
 
-}*/
+  .judeTitle {
+
+  }
+  .lookBook {
+    height: 270px;
+    background-color: black;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .judesLookBook {
+    float: right;
+    padding-top: 0px;
+  }
+
+  .judeImage img {
+    position: absolute;
+    top: 100px;
+  }
+  .lookBookOne {
+    background-image: url(../Images/judeLookBookUno.jpg);
+    background-size: cover;
+  }
+
+}
 
 /********************************** 1000PX *************************************************/
   
-/*@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
+
+  .ladyImage {
+    background-size: 50% 100%;
+
+  }
+
+  .judeTitle {
+
+  }
+  .judeAbout {
+    
+    padding: 10px 90px;
+  }
+  .lookBookOne {
+    background-image: url(../Images/judeLookBookUno.jpg);
+    background-size: cover;
+    background-position: 0px -50px;
+  }
+
+  .lookBookTwo {
+    background-image: url(../Images/judeLookBookDos.jpg);
+    background-size: cover;
+     background-position: 0px -50px;
+  }
+
+  .lookBookThree {
+    background-image: url(../Images/judeLookBookTres.jpg); 
+    background-size: cover;
+     background-position: 0px -50px;
+  }
+}
+
+/********************************** 1100PX *************************************************/
+  
+@media screen and (min-width: 1100px) {
+
+  .ladyImage {
+    background-size: 40% 100%;
+
+  }
+
+  .judeTitle {
+
+  }
+  .judeAbout {
+    
+    padding: 10px 90px;
+  }
+
+  .lookBookTwo {
+    background-image: url(../Images/judeLookBookDos.jpg);
+    background-size: cover;
+     background-position: 0px -75px;
+  }
+}
+
+/********************************** 1200PX *************************************************/
+  
+@media screen and (min-width: 1200px) {
+
+  .ladyImage {
+    background-size: 40% 100%;
+
+  }
+
+  .judeTitle {
+
+  }
+  .judeAbout {
+    
+    padding: 10px 90px;
+  }
+
+  .lookBookTwo {
+    background-image: url(../Images/judeLookBookDos.jpg);
+    background-size: cover;
+     background-position: 0px -125px;
+  }
+}
+
+/********************************** 1250PX *************************************************/
+  
+@media screen and (min-width: 1250px) {
+
+  .ladyImage {
+    background-size: 40% 100%;
+
+  }
+
+  .judeTitle {
+
+  }
+  .judeAbout {
+    
+    padding: 10px 90px;
+  }
+
+  .lookBookTwo {
+    background-image: url(../Images/judeLookBookDos.jpg);
+    background-size: cover;
+     background-position: 0px -150px;
+  }
+
+  .lookBookOne {
+    background-image: url(../Images/judeLookBookUno.jpg);
+    background-size: cover;
+    background-position: 0px -75px;
+  }
+
+  .lookBookThree {
+    background-image: url(../Images/judeLookBookTres.jpg); 
+    background-size: cover;
+     background-position: 0px -75px;
+  }
+}
 
 
 
-}*/
 
 /********************************** 1200px *************************************************/
-@media screen and (min-width: 1200px) {
+/*@media screen and (min-width: 1200px) {
   
   .judeAbout {
     padding-top: 50px;
   }
 
-}
+}*/

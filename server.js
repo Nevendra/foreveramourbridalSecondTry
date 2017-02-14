@@ -10,7 +10,7 @@ const customRouter = require('./routes/custom');
 const contactRouter = require('./routes/contact');
 const apptRouter = require('./routes/appointment');
 const collectionRouter = require('./routes/collection');
-const aboutJudeJowilsonRouter = require('./routes/aboutJudeJowilson')
+const aboutJudeJowilsonRouter = require('./routes/aboutJudeJowilson');
 
 const PORT    = process.argv[2] || process.env.port || 3000;
 
