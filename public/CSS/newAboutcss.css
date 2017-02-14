@@ -1,9 +1,7 @@
 * {
 	box-sizing: border-box;
-	color: black;
-	padding: 0;
-	margin: 0;
-	font-family: 'Rajdhani', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  margin:-4px auto;
 }
 
 body {
@@ -14,64 +12,70 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 }
+.opi{
 
-/*-----------------------------------NAV--------------------------------------*/
+  height: 50vh;
+  width: 50vw;
+}
+.image{
+  background: transparent;
+  opacity: 1;
+  padding-top: 33px;
+
+
+}
 
 nav {
-	position: fixed;
-	width: 100vw;
-	z-index: 50;
-	top: 0;
-	padding-top: 10px;
-	background-color: white;
-	box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
-	-webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+  width: 100%;
+  height: 108px;
+  border-bottom: solid 1px #998100;
+  position: fixed;
+  z-index: 50;
+  top: 0px;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+  padding-top: 10px;
+}
+nav ul {
+   width: 100%;
+  /*  background-color: #c2f8ff;*/
+    height: 0px;
+    padding-top: 9px;
+}
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: -27px;
+    /* padding-top: 16px; */
+    /* width: 190px; */
+    margin: 6.5px;
+    padding: initial;
 }
 
-nav > ul {
-  width: 100vw;
-  height: 0px;
-  padding-top: 9px;
-}
 
-nav > ul > li {
-  display: inline-block;
-  text-align: center;
-  padding: -27px;
-  margin: 9.5px;
-	position: relative;
-	left: 4.4vw;
-}
-
-nav > ul > li > a {
-	color: #4ab2b2;
-	text-decoration: none;
-	font-size: 17px;
-}
-
-.clear {
-	clear: both;;
-}
-.float {
-    float: left;
-    padding-left: 26vw;
-}
+nav ul li a {
+  color: #4ab2b2;
+  text-decoration: none;
+  font-size: 17px;
+ }
 
 .appointment {
-	float: right;
-	position: relative;
-	width: 18vw;
-  margin-right: 57px;
-  padding: 11px;
-  text-align: center;
-  font-size: 2.5vh;
-  margin-top: -8px;
-	bottom: -1vh;
+  text-decoration: none;
+    overflow: hidden;
+   float: right;
+    margin-right: 57px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 5px;
+    /* width: 19%; */
+    /* background-color: rebeccapurple; */
+    /* font-size: larger; */
+    /* border: 1px solid; */
 }
-
 .appointment > a:hover{
-	color: #EF8E89;
+  color: #EF8E89;
 }
 
 .appointment p{
@@ -87,10 +91,11 @@ nav > ul > li > a {
 }
 
 .logo {
-	padding-top: 120px;
+  padding-top: 120px;
   text-align: center;
   position: absolute;
   left: 130px;
+
 }
 
 .logo a {
@@ -120,6 +125,10 @@ nav > ul > li > a {
   padding-right: 60px;
   text-decoration: none;
   color: #1799B5;
+}
+.float {
+    float: left;
+    padding-left: 30vw;
 }
 
 .btn {
@@ -168,30 +177,24 @@ nav > ul > li > a {
 
 
 .btn:hover{
-	color: #ef8e89;
+	/*color: #ef8e89;*/
 }
 
 /*-----------------------------------END NAV----------------------------------*/
 
 /*-----------------------------------BADGES-----------------------------------*/
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  height: 100%;
-}
-.diy-slideshow{
+/*.diy-slideshow{
   position: relative;
   display: block;
   overflow: hidden;
-}
-.show > img {
+}*/
+/*.show > img {
 	height: 100vh;
 	top: 10vh;
 	position: relative;
 	width: 100vw;
-}
+}*/
 
 figure{
   position: absolute;
@@ -244,12 +247,281 @@ figure.show{
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
+.image{
+        margin-top: 33px;
+    width: 47vw;
+    float: right;
+    box-shadow: 8px 42px 67px #888888;
+    background-color: white;;
+}
+
+/*----------------------------------- IMAGE -------------------------------*/
+/*
 
 /*-----------------------------------END BADGES-------------------------------*/
 
-/*-----------------------------------FOOTER-----------------------------------*/
+.reviews{
+ margin: 48px 0px;
+}
+
+.reviews #title h3{
+ padding-top: 13px;
+ text-align: center;
+ font-weight: 600;
+
+}
+.reviews  #title p{
+  font-size:larger;
+  padding: 16px 204px;
+}
+.reviews #title h4{
+  padding: 17px 209px 2px;
+
+}
+.top{
+  width: 100vw;
+  height: 2px;
+  background: green;
+}
+.wall{
+    padding: 29px 0px;
+
+    width: 100vw;
+    color: white;
+    background-color: lightblue;
+    height: 25vh;
+}
+
+
+/*-----------------------------------START FOOTER-----------------------------------*/
 
 footer {
+    padding: 25px 2px;
+    background-color: #fdfdfc;
+    height: 155px;
+
+}
+
+footer p {
+  padding-top: 18px;
+  color: #998100;
+    padding-bottom: 5px;
+    float: left;
+    padding-left: 57px;
+    font-size: 1.1em;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+.footerContact {
+  /*  margin-right: 50px;
+    border-right: solid 1px lightgrey;
+    padding-right: 25px;*/
+}
+
+#knotIcon{
+  height:4.5vh;
+  width: 2.5vw;
+}
+
+#fbIcon{
+  height:4.5vh;
+  width: 2.5vw;
+}
+
+#twitterIcon{
+  height:4.5vh;
+  width: 2.5vw;
+
+}
+
+#pinterestIcon{
+  height:4.5vh;
+  width: 2.5vw;
+
+}
+#instagramIcon{
+  height:4.5vh;
+  width: 2.5vw;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+#footer-social a:hover{
+
+  color: #1799B5;
+
+}
+
+footer img {
+  /*color: white;*/
+  background-color:#1799B5;
+  border-radius: 50px;
+}
+
+.socialLink{
+  padding: 6px;
+  height: 10vh;
+
+}
+
+.contentPromo {
+  background-image: url("../Images/swing_edited_smaller.png");
+  color: white;
+  height: 61vh;
+  padding-top: 65px;
+  text-align: -webkit-center;
+  width: 100%;
+
+}
+
+.contentPromo p{
+    width: 50vw;
+    margin-left: 50vw;
+    padding-right: 42px;
+    font-size: 21px;
+    font-family: 'Josefin Slab', serif;
+    /* font-weight: 400; */
+    line-height: 1.7;
+    margin-bottom: 14px;
+
+}
+.footerSocialMedia{
+  padding: 0 auto;
+  margin:0 auto;
+  text-align: center;
+}
+
+/*button effects*/
+.btn {
+  color: rgb(125, 114, 81);
+
+    font-weight: 400;
+    /*line-height: 22px;*/
+    /* margin: 5px auto 3em; */
+    /* max-width: 114px; */
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* vertical-align: top; */
+    width: 151px;
+    font-size: smaller;
+    padding: 3.5px;
+
+}
+
+h5{
+  font-weight: 300;
+  padding-top: 47px;
+  text-align: center;
+
+}
+
+
+.stro{
+    overflow: hidden;
+    float: right;
+    margin-right: 71px;
+    padding: 5.5px;
+    text-align: center;
+    margin-top: 5px;
+    float: right;
+    position: relative;
+    font-size: large;
+}
+.stro a{
+      color: #ef8e89;
+    text-decoration: none;
+    position: relative;
+    /* width: 8vw; */
+    padding: 18px;
+
+}
+.stro a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.stro a:hover{
+  text-decoration: none;
+  color:white;
+  background-color: #ef8e89;
+
+}
+
+.stro  a:hover:after {
+  width: 100%;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+
+.btn-4:hover:after {
+
+/*  left: 120%;*/
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.btn:hover{
+  /*color:white;*/
+}
+
+
+/*footer {
 	position: relative;
 	padding: 50px;
 	background-color: #f9f9f9;
@@ -285,14 +557,17 @@ footer h3 {
 	margin-bottom: 30px;
 }
 
+
+*/
+/*--------------------------------END FOOTER----------------------------------*/
+
+
+
 .footerSocialMedia.float {
 	position: relative;
 	width: 38vw;
 	right: 20vw;
 }
-/*--------------------------------END FOOTER----------------------------------*/
-
-
 /*to show our exp is dif than any bridal shop in the city w=and why you should choose us over everyone else
 
 exlusive
