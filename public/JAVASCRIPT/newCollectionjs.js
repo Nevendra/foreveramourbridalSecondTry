@@ -14,9 +14,9 @@ $(document).ready(function(){
 		// slidesDesignerName.css("width", slides.width());
 
 
-	var footerContact = $('.footerContact').outerWidth(true);
-	var footerSocialMedia = $('.footerSocialMedia').outerWidth(true);
-	$('.footerinfo').css('width', footerContact + footerSocialMedia + 1);
+	// var footerContact = $('.footerContact').outerWidth(true);
+	// var footerSocialMedia = $('.footerSocialMedia').outerWidth(true);
+	// $('.footerinfo').css('width', footerContact + footerSocialMedia + 1);
 
 
 	// $(sliderContainer).on("mouseenter", ".designerSlides", function(){
