@@ -1,0 +1,35 @@
+{
+  "name": "foreveramourbridalsecondtry",
+  "version": "1.0.0",
+  "description": "Forever Amour Bridal Boutique Website",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "express-session": "^1.15.0",
+    "jquery": "^3.1.1",
+    "method-override": "^2.3.7",
+    "morgan": "^1.7.0",
+    "node-fetch": "^1.6.3",
+    "path": "^0.12.7",
+    "pg-promise": "^5.5.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dzeig/foreveramourbridalSecondTry.git"
+  },
+  "author": "ForeverAmour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dzeig/foreveramourbridalSecondTry/issues"
+  },
+  "homepage": "https://github.com/Dzeig/foreveramourbridalSecondTry#readme"
+}
