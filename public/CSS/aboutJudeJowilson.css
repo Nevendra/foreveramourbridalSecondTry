@@ -213,17 +213,6 @@ nav ul li a {
   margin: 50px;
 }
 
-.mainTitle  {
-  font-size: 25px;
-  font-family: 'Raleway', sans-serif;
-  color: #ef8e89;
-}
-
-.subTitle {
-  font-size: 20px;
-  font-family: 'Raleway', sans-serif;
-  color: #ef8e89;
-}
 .content {
   height: 450px;
 }
@@ -242,11 +231,14 @@ width: 100%;
    margin-bottom: 20px;
 }
 
-.judeTitle {
+.judeTitle p {
 
   color: #ef8e89;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   text-align: center;
+  font-size: 33px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
 }
 
 .judeAbout {
@@ -255,7 +247,9 @@ width: 100%;
 }
 
 .judeAbout .aboutText {
-  padding-bottom: 10px;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
 }
 
 .judesLookBook {
@@ -449,11 +443,11 @@ width: 100%;
 
   .judeTitle {
     font-size: 17px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
   }
 
   .judeAbout .aboutText {
-    padding-bottom: 60px;
+  
   }
 
   .lookBook {
@@ -499,11 +493,11 @@ width: 100%;
 
   .judeTitle {
     font-size: 17px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
   }
 
   .judeAbout .aboutText {
-    padding-bottom: 60px;
+
   }
 
   .lookBook {

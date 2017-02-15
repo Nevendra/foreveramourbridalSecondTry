@@ -13,7 +13,7 @@ angular.module('DesignerValue', [])
 				gallery: [
 					{
 						img: "../Images/Collection_large/AK160_full.jpg",
-						designerName: "Eddie k",
+						designerName: "",
 						style: [
 							{
 								name: "mermaid"
@@ -28,7 +28,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "../Images/Collection_large/AK181_full.jpg",
-						designerName: "Eddie k",
+						designerName: "",
 						style: [
 							{
 								name: "ball gown"
@@ -43,7 +43,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "../Images/Collection_large/EddyK_1.jpg",
-						designerName: "Eddie k",
+						designerName: "",
 						style: [
 							{
 								name: "a-line"
@@ -58,7 +58,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "../Images/Collection_large/EddyK_2.jpg",
-						designerName: "Eddie k",
+						designerName: "",
 						style: [
 							{
 								name: "trumpet"
@@ -73,7 +73,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "../Images/Collection_large/EddyK_3-cropped.jpg",
-						designerName: "Eddie k",
+						designerName: "",
 						style: [
 							{
 								name: "mermaid"
@@ -88,7 +88,7 @@ angular.module('DesignerValue', [])
 					},					
 					{
 						img: "../Images/Collection_large/EddyK_4-cropped.png",
-						designerName: "Eddie k",
+						designerName: "",
 						style: [
 							{
 								name: "ball gown"	
@@ -103,7 +103,7 @@ angular.module('DesignerValue', [])
 					},					
 					{
 						img: "../Images/Collection_large/EK1084_back2.jpg",
-						designerName: "Eddie k",
+						designerName: "",
 						style: [
 							{
 								name: "a-line"
@@ -118,7 +118,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "../Images/Collection_large/EK1084_full-1.jpg",
-						designerName: "Eddie k",
+						designerName: "",
 						style: [
 							{
 								name: "trumpet"
@@ -133,7 +133,7 @@ angular.module('DesignerValue', [])
 					},
 					{
 						img: "../Images/Collection_large/EK1088_full-e1464107889952.jpg",
-						designerName: "Eddie k",
+						designerName: "",
 						style: [
 							{
 								name: "mermaid"

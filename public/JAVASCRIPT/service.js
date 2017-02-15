@@ -58,13 +58,14 @@ angular.module('DesignerService', ['DesignerValue'])
 
 .service('PaginateDesigner', function(DesignerListFactory, CollectionArray){
 	var self = this;
-	self.PaginateDesignerFunction = function(designer, page){
+	self.PaginateDesignerFunction = function(array, page,  clickedPage){
+		self.currentPage = page;
+		self.pageClicked = clickedPage;
 		self.designerPaginateArray = [];
-		self.designerList = new DesignerListFactory(CollectionArray);
-		self.designerImages = self.designerList.viewDesignerGallery(designer);
-		self.records_per_page = 9;
-		for (var i = (page-1) * self.records_per_page; i < (page * self.records_per_page) && i < self.designerImages.length; i++) {
-			self.designerPaginateArray.push(self.designerImages[i]);
+		self.records_per_page = 6;
+		self.numPages = Math.ceil(array.length / self.records_per_page);
+		for (var i = (self.currentPage-1) * self.records_per_page; i < (self.currentPage * self.records_per_page) && i < array.length; i++) {
+			self.designerPaginateArray.push(array[i]);
     	}
   		return self.designerPaginateArray;
 	};

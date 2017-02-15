@@ -196,14 +196,18 @@ nav ul li a {
   padding-bottom: 10px;
   text-align: center;
   color: #1799B5;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 33px;
 }
 .coral h1 {
   color: #ef8e89;
 }
 .designerAbout p {
   padding-bottom: 30px;
-  text-align: justify;
+  text-align: left;
+  font-weight: 100;
+  font-size: 17px;
   color: rgb(125, 114, 81);
   font-family: 'Open Sans', sans-serif;
 
@@ -220,7 +224,6 @@ nav ul li a {
 .galleryBox {
   width: 100%; 
   height: 300px;
-  display: none;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -228,13 +231,13 @@ nav ul li a {
   width: 60%; 
   height: 100%;
 }
-.galleryBox:hover {
+/*.galleryBox:hover {
   z-index: 90;
   -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
   border: solid 1px #1799B5;
-}
+}*/
 .galleryBox p {
   position: absolute;
   bottom: 0px;
@@ -274,21 +277,21 @@ nav ul li a {
 }
 .previous {
   left: 10px;
-  padding: 3px;
+  padding: 10px;
   background-color: #1799B5;
   color: white;
   position: absolute;
   bottom: 50%;
-  font-size: 20px;
+  font-size: 40px;
 }
 .next {
-  right: 10px;
-  padding: 3px;
+  right: 7px;
+  padding: 7px;
   background-color: #1799B5;
   color: white;
   position: absolute;
   bottom: 50%;
-  font-size: 20px;
+  font-size: 40px;
 }
 .previousMain {
   background-color: #1799B5;

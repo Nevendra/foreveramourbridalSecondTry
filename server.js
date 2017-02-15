@@ -41,11 +41,8 @@ app.use('/custom', customRouter);
 app.use('/contact', contactRouter);
 app.use('/appointment', apptRouter);
 app.use('/collection', collectionRouter);
-<<<<<<< HEAD
 app.use('/management', managementRouter);
-
-=======
 app.use('/aboutJudeJowilson', aboutJudeJowilsonRouter);
->>>>>>> aa77f7b87597ab7262874cb10400ae018ca6903a
+
 
 app.listen(PORT, () => console.log('Server running on port', PORT));
