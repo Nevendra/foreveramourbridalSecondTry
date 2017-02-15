@@ -11,10 +11,10 @@ $(document).ready(function(){
 	// To initially run the function:
 	$(window).resize();
 
-	var footerContact = $('.footerContact').outerWidth(true);
-	var footerSocialMedia = $('.footerSocialMedia').outerWidth(true);
-	$('.footerinfo').css('width', footerContact + footerSocialMedia + 1);
-	$('.reviewWrapper').css('height', "1500px");
+	// var footerContact = $('.footerContact').outerWidth(true);
+	// var footerSocialMedia = $('.footerSocialMedia').outerWidth(true);
+	// $('.footerinfo').css('width', footerContact + footerSocialMedia + 1);
+	// $('.reviewWrapper').css('height', "1500px");
 
 	// $(window).scroll(function(){
 	// 		$(".review").toggleClass('show', $(this).scrollTop() > 200);

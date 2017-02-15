@@ -58,7 +58,7 @@ nav ul li a {
     margin-right: 71px;
     padding: 5.5px;
     text-align: center;
-
+    margin-top: 5px;
     float: right;
     position: relative;
     font-size: large;
@@ -186,7 +186,6 @@ h5{
 }
 
 .appointment p{
-
   color:white;
 }
 
@@ -237,37 +236,89 @@ h5{
 
 /*-----------------------------------END NAV----------------------------------*/
 
+/*-----------------------------------BADGES-----------------------------------*/
+
+.diy-slideshow{
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.show > img {
+  height: 100vh;
+  top: 10vh;
+  position: relative;
+  width: 100vw;
+}
+
+figure{
+  position: absolute;
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption{
+  position: absolute;
+  font-family: sans-serif;
+  font-size: .8em;
+  bottom: .75em;
+  right: .35em;
+  padding: .25em;
+  color: #fff;
+  background: rgba(0,0,0, .25);
+  border-radius: 2px;
+}
+figcaption a{
+  color: #fff;
+}
+figure.show{
+  opacity: 1;
+  position: static;
+  transition: 1s opacity;
+}
+.next, .prev{
+  color: #fff;
+  position: absolute;
+  background: rgba(0,0,0, .6);
+  top: 50%;
+  z-index: 1;
+  font-size: 2em;
+  margin-top: -.75em;
+  opacity: .3;
+  user-select: none;
+}
+.next:hover, .prev:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.next{
+  right: 0;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.prev{
+  left: 0;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/*-----------------------------------END BADGES-------------------------------*/
 
 /*-----------------------------------REVIEWS----------------------------------*/
 
 .reviews {
-   width: 42vw;
-    padding: 4px 44px 3px;
-    margin-bottom: 96px;
-    line-height: 1.7;
-    width: 490px;
-    height: 550px;
-    overflow: scroll;
-}
-#title{
-  padding: 15px;
-
+  width: 50vw;
 }
 
 .reviews > #rev1 {
   position: relative;
   padding: 0 0 4vh 0;
 }
-.wall{
- padding: 41px 16px 9px 13px;
-width: 83vw;
-}
+
 /*-----------------------------------END RREVIEWS-----------------------------*/
 
 .image{
-      padding-top: 23px;
-    box-shadow: 13px 19px 35px #888888;
-    margin-bottom: 46px;
+  padding-top: 23px;
 }
 
 
@@ -292,10 +343,6 @@ footer p {
 
     padding: 8px;
     text-align: center;
-}
-.footerContact p{
-  display: inline-block;
-  padding: 0px 0px 2px 43px;
 }
 
 .footerinfo {
