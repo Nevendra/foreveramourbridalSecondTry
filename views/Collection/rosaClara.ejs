@@ -86,28 +86,81 @@
 				</div>
 			</div>
 			<div class="designerGallery" ng-if="ctrl.mainHtml == true">
-				<div class="galleryBox float" ng-repeat=" gallery in ctrl.rosaClara[1]">
-					<img class="clickedImage" src="{{gallery.img}}" ng-click="ctrl.viewLargeImage(gallery.img, ctrl.rosaClara[1], $index)">
+				<div class="galleryBox float" ng-repeat=" gallery in ctrl.rosaClaraPaginate">
+					<img class="clickedImage" src="{{gallery.img}}" ng-click="ctrl.viewLargeImage(gallery.img, ctrl.rosaClaraPaginate, $index)">
 					<p ng-bind="gallery.designerName"></p>
 				</div>
 			</div>
 			<div class="clear"></div>
 		</div>
 
-		<p class="previousMain">Previous</p>
+		<p class="previousMain" ng-click="ctrl.prevPage(ctrl.rosaClara[1], ctrl.current_page)">&laquo;</p>
 			
-		<p class="nextMain">Next</p>
+		<p class="nextMain" ng-click="ctrl.nextPage(ctrl.rosaClara[1], ctrl.current_page)">&raquo;</p>
 
 		<div class="selectedImage" ng-if="ctrl.clickedThumbNail == true">
 			<div class="selectedImageContent">
-				<p class="previous" ng-click="ctrl.prevPage(ctrl.selectedArray, ctrl.selectedIndex)">Previous</p>
+				<p class="previous" ng-click="ctrl.prevImage(ctrl.selectedArray, ctrl.selectedIndex)">Previous</p>
 				<img class-"theSelectedImage" src="{{ctrl.selectedImage}}">
-				<p class="next" ng-click="ctrl.nextPage(ctrl.selectedArray, ctrl.selectedIndex)">Next</p>
+				<p class="next" ng-click="ctrl.nextImage(ctrl.selectedArray, ctrl.selectedIndex)">Next</p>
 				<P class="close" ng-click="ctrl.closeDesignerImageGallerySelectedImage()">X</P>
 			</div>
 			<div class="clear"></div>
 		</div>
 	</div>
+
+<footer>
+
+
+  	<ul id="footer-social">
+  		<li>
+	      	<a class="socialLink" href="https://www.theknot.com/marketplace/forever-amour-bridal-boutique-new-york-ny-546587" target="_blank">
+	          <img id="knotIcon" src="/Images/SocialMediaIcons/Knot_SocialIcon_transparent.png" alt="The Knot Icon" title="The Knot Wedding Network">
+	        </a>
+  		</li>
+  		<li>
+			<a class="socialLink" href="https://www.facebook.com/ForeverAmourBridalDresses/" target="_blank">
+	          <img id="fbIcon" src="/Images/SocialMediaIcons/FB_SocialIcon_transparent.png" alt="Facebook Icon" title="Facebook">
+	        </a>
+  		</li>
+  		<li>
+  			<a class="socialLink" href="https://twitter.com/foreveramournyc" target="_blank">
+      		  <img id="twitterIcon" src="/Images/SocialMediaIcons/Twitter_SocialIcon_transparent.png" alt="Twitter Icon" title="Twitter">
+   			</a>
+  		</li>
+  		<li>
+  			<a class="socialLink" href="https://www.pinterest.com/foreveramour/" target="_blank">
+      		  <img id="pinterestIcon" src="/Images/SocialMediaIcons/Pinterest_SocialIcon_transparent.png" alt="Pinterest Icon" title="Pinterest">
+    		</a>
+  		</li>
+  		<li>
+  			<a class="socialLink" href="https://www.instagram.com/foreveramourbridalboutique/" target="_blank">
+      		  <img id="instagramIcon" src="/Images/SocialMediaIcons/Instagram_SocialIcon_transparent.png" alt="Instagram Icon" title="Instagram">
+    		</a>
+  		</li>
+  	</ul>
+
+	<div class="footerinfo">
+		<ul>
+		    <li class="footerMarginRight">
+				212 - 486 -2900
+			</li>
+
+			<li class="footerMarginRight">
+				1089 Second Ave. Suite 2
+		    </li>
+
+	         <li>
+					New York, NY 10022
+	        </li>
+	    </ul>
+	      <p class="email">
+	        stylist@foreveramourbridal.com
+	      </p>
+	        <h5 class="footerTextAlignRight copyright">© 2017 Forever Amour Bridal Boutique All rights reserved.</h5>
+
+	</div>
+</footer>
 
 </body>
 </html>
