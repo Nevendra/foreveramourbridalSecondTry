@@ -21,7 +21,7 @@ const authRouter     = require('./routes/auth');
 const usersRouter    = require('./routes/users');
 
 
-const PORT             = process.argv[2] || process.env.port || 3000;
+const PORT             = process.argv[2] || process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
