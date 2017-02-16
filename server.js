@@ -15,7 +15,7 @@ const customRouter     = require('./routes/custom');
 const contactRouter    = require('./routes/contact');
 const apptRouter       = require('./routes/appointment');
 const collectionRouter = require('./routes/collection');
-const aboutJudeJowilsonRouter = require('./routes/aboutJudeJowilson');
+const aboutJudeJowilsonRouter = require('./routes/aboutjudejowilson');
 const loginRouter    = require('./routes/login');
 const authRouter     = require('./routes/auth');
 const usersRouter    = require('./routes/users');
@@ -54,7 +54,7 @@ app.use('/contact', contactRouter);
 app.use('/appointment', apptRouter);
 app.use('/collection', collectionRouter);
 app.use('/login', loginRouter);
-// app.use('/aboutJudeJowilson', aboutJudeJowilsonRouter);
+app.use('/aboutJudeJowilson', aboutJudeJowilsonRouter);
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
 
