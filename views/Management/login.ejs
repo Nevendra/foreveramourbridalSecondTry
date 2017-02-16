@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forever Amour Management</title>
+    <link rel="stylesheet" href="CSS/management.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani|pen+Sans:400,300,300italic,400italic,700,700italic|Great+Vibes" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+<nav class="stroke">
+	<div class="logoNav">
+		<p><a href="/">Forever Amour Bridal Boutique</a><p>
+	</div>
+<ul class="float">
+	  	<li><a href="/" class="currentPage btn btn-4">Home</a></li>
+	   	<li><a href="/about" class="currentPage btn btn-4">About</a></li>
+      <li><a href="/collection" class="currentPage btn btn-4">Our Collection</a></li>
+      <li><a href="/custom" class="currentPage btn btn-4">Custom Made</a></li>
+      <li><a href="/contact" class="currentPage btn btn-4">Contact</a></li>
+	   	<li><a href="" class="currentPage btn btn-4">Start Here</a></li>
+</ul>
+
+	<div class="stro">
+  		<a href="/appointment" class="">Make An Appointment</a>
+	</div>
+<!-- <div class="clear"></div> -->
+
+<div class='login'>
+<form class="" action="/auth" method="post">
+    <p>Username:</p> <input class='logForm' type="text" name="user[username]" value="">
+    <p>Password:</p> <input class='logForm' type="password" name="user[password]" value="">
+    <input type="submit" name="name" value="Log in">
+</form>
+</div>
+
+</nav>
+
+    <div class="register">
+      <h2>Sign up</h2>
+      <form class="regForm" action="/users" method="post">
+        <p>First Name:</p>
+        <input class= 'regForm' type="text" name="user[firstname]" value="">
+        <p>Last Name:</p>
+        <input class= 'regForm' type="text" name="user[lastname]" value="">
+        <p>Your Email:</p>
+        <input class= 'regForm' type="text" name="user[email]" value="">
+        <p>Username:</p>
+           <input class= 'regForm' type="text" name="user[username]" value="">
+           <p>New Password:</p>
+           <input class= 'regForm' type="password" name="user[password]" value="">
+           <input type="submit" value="Sign Up">
+       </form>
+</div>
+
+<div class="image-container">
+  <img src="Images/IMG_0603.png" alt="">
+</div>
+
+<script type="text/javascript">
+$(document).ready((data) => {
+  $.ajax({
+    url: 'http://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?',
+    method: 'GET',
+    dataType: 'JSON',
+    success: (data) => {
+      console.log(data);
+      let $div = $('<div>');
+      let $h4One = $('<h4>');
+      let $h3One= $('<h3>');
+        let quote = data.quoteText;
+        let author = data.quoteAuthor;
+        $h3One.text(quote)
+        $h4One.text(author)
+        $div.append($h3One);
+        $div.append($h4One);
+        $('body').append($div);
+    }
+  })
+})
+</script>
+
+
+
+  </body>
+</html>

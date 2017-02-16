@@ -2,104 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>IV</title>
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400" rel="stylesheet">
+    <title>Forever Amour Management</title>
+    <link rel="stylesheet" href="CSS/management.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani|pen+Sans:400,300,300italic,400italic,700,700italic|Great+Vibes" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
-
-<style>
-body {
-  background-color: #fafafa;
-  font-family: 'Rajdhani', sans-serif;
-  margin: 0;
-}
-.login > h1 {
-  position: relative;
-  left: 1vw;
-  top: 4vh;
-  font-weight: 300;
-  width: 4vw;
-}
-.login {
-  position: relative;
-  width: 100vw;
-  display: inline-block;
-  bottom: 5vh;
-  -webkit-box-shadow: 0px 3px 4px -1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 3px 4px -1px rgba(0,0,0,0.75);
-  box-shadow: 0px 3px 4px -1px rgba(0,0,0,0.75);
-}
-.register > h2 {
-border-bottom: 1px solid black;
-width: 6vw;
-text-align: center;
-}
-.login > form {
-position: relative;
-left: 57vw;
-bottom: 3vh;
-display: inline-block;
-}
- .login > form > input.logForm {
-   position: relative;
-  height: 2vh;
-  font-size: 2vh;
-  width: 10vw;
-  float: left;
-}
-.login > form > p {
-  position: relative;
-  float: left;
-  bottom: 1vh;
-}
-.register > form > .regForm {
-  width: 15vw;
-  height: 3vh;
-  font-size: 2vh;
-}
-.register {
-  position: relative;
-  left: 77vw;
-  display: inline-block;
-  top: 4vh;
-}
-
-h3 {
-  text-align: center;
-  left: 12vw;
-  position: absolute;
-  bottom: 5vh;
-  width: 50vw;
-  font-size: 3vh;
-  background: -webkit-linear-gradient(#2A628F, #F00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-p {
-  margin: 1vh;
-}
-h4 {
-  text-align: center;
-  left: 12vw;
-  position: absolute;
-  bottom:3vh;
-  width: 50vw;
-  font-size: 2vh;
-  background: -webkit-linear-gradient(#000, #0FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.image-container > img {
-  position: relative;
-  bottom: 50vh;
-  height: 60vh;
-  left: 5vw;
-}
-</style>
-
-
-
 
 <nav class="stroke">
 	<div class="logoNav">
@@ -119,16 +27,15 @@ h4 {
 	</div>
 <!-- <div class="clear"></div> -->
 
-</nav>
-
 <div class='login'>
-<form class="" action="/authentication" method="post">
+<form class="" action="/auth" method="post">
     <p>Username:</p> <input class='logForm' type="text" name="user[username]" value="">
     <p>Password:</p> <input class='logForm' type="password" name="user[password]" value="">
     <input type="submit" name="name" value="Log in">
 </form>
 </div>
 
+</nav>
 
     <div class="register">
       <h2>Sign up</h2>
