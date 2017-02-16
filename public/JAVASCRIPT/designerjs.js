@@ -37,50 +37,50 @@ $(document).ready(function(){
 	var designerGallery = $(".designerGallery");
 	var galleryBox = designerGallery.find(".galleryBox");
 
-	var page = 1;
-	var numOfPages;
+	// var page = 1;
+	// var numOfPages;
 
-	function pagination(page) {
-		var current_page = page;
-		if(windowWidth < 1000 ) {
-			var records_per_page = 6;
-			numOfPages = Math.floor(galleryBox.length / 6);
-		} else {
-			var records_per_page = 9;
-			numOfPages = Math.floor(galleryBox.length / 6);
-		}
-			$(galleryBox).hide();
-		for (var i = (page-1) * records_per_page; i < (page * records_per_page) && i < galleryBox.length; i++) {
-			$(galleryBox[i]).show();
-		}
-	}
+	// function pagination(page) {
+	// 	var current_page = page;
+	// 	if(windowWidth < 1000 ) {
+	// 		var records_per_page = 6;
+	// 		numOfPages = Math.floor(galleryBox.length / 6);
+	// 	} else {
+	// 		var records_per_page = 9;
+	// 		numOfPages = Math.floor(galleryBox.length / 6);
+	// 	}
+	// 		$(galleryBox).hide();
+	// 	for (var i = (page-1) * records_per_page; i < (page * records_per_page) && i < galleryBox.length; i++) {
+	// 		$(galleryBox[i]).show();
+	// 	}
+	// }
 
-	pagination(page);
+	// pagination(page);
 
-	$(".nextMain").click(function(){
+	// $(".nextMain").click(function(){
 
-		if(page === numOfPages){
-			page = 1;
-		} else {
-			page = page + 1;
-		}
-		console.log(page);
-		pagination(page);
-	});
+	// 	if(page === numOfPages){
+	// 		page = 1;
+	// 	} else {
+	// 		page = page + 1;
+	// 	}
+	// 	console.log(page);
+	// 	pagination(page);
+	// });
 
-	$(".previousMain").click(function(){
+	// $(".previousMain").click(function(){
 
-		if(page === 1){
-			page = numOfPages;
-		} else {
-			page = page - 1;
-		}
-		console.log(page);
-		pagination(page);
-	})
+	// 	if(page === 1){
+	// 		page = numOfPages;
+	// 	} else {
+	// 		page = page - 1;
+	// 	}
+	// 	console.log(page);
+	// 	pagination(page);
+	// })
 
-	$(window).on('resize', function(){
-		pagination(page);
-	});
+	// $(window).on('resize', function(){
+	// 	pagination(page);
+	// });
 
 });

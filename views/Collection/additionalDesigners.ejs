@@ -86,23 +86,24 @@
 				</div>
 			</div>
 			<div class="designerGallery" ng-if="ctrl.mainHtml == true">
-				<div class="galleryBox float" ng-repeat=" gallery in ctrl.additionalDesigner[1]">
-					<img class="clickedImage" src="{{gallery.img}}"ng-click="ctrl.viewLargeImage(gallery.img, ctrl.additionalDesigner[1], $index)">
+				<div class="galleryBox float" ng-repeat=" gallery in ctrl.additionalDesignerPaginate">
+					<img class="clickedImage" src="{{gallery.img}}"ng-click="ctrl.viewLargeImage(gallery.img, ctrl.additionalDesignerPaginate, $index)">
 					<p ng-bind="gallery.designerName"></p>
 				</div>
 			</div>
 			<div class="clear"></div>
 		</div>
 
-		<p class="previousMain">Previous</p>
+
+		<p class="previousMain" ng-click="ctrl.prevPage(ctrl.additionalDesigner[1], ctrl.current_page)">&laquo;</p>
 			
-		<p class="nextMain">Next</p>
+		<p class="nextMain" ng-click="ctrl.nextPage(ctrl.additionalDesigner[1], ctrl.current_page)">&raquo;</p>
 
 		<div class="selectedImage" ng-if="ctrl.clickedThumbNail == true">
 			<div class="selectedImageContent">
-				<p class="previous" ng-click="ctrl.prevPage(ctrl.selectedArray, ctrl.selectedIndex)">Previous</p>
+				<p class="previous" ng-click="ctrl.prevImage(ctrl.selectedArray, ctrl.selectedIndex)">&laquo;</p>
 				<img class="theSelectedImage" src="{{ctrl.selectedImage}}">
-				<p class="next" ng-click="ctrl.nextPage(ctrl.selectedArray, ctrl.selectedIndex)">Next</p>
+				<p class="next" ng-click="ctrl.nextImage(ctrl.selectedArray, ctrl.selectedIndex)">&raquo;</p>
 				<P class="close" ng-click="ctrl.closeDesignerImageGallerySelectedImage()">X</P>
 			</div>
 			<div class="clear"></div>

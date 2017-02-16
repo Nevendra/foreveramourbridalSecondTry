@@ -206,11 +206,22 @@ nav ul li a {
 	margin: 0 auto;
 	padding-top: 50px;
 }
+.titleHeading {
+	margin: 0 auto;
+	width: 80%;
+	padding-bottom: 40px;
+}
+.titleHeading p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	text-align: justify;
+}
 
 .exclusiveContainer {
 	margin: 0px;
 	width: 100%;
 	margin-bottom: 20px;
+
 }
 
 .featuredContainer {
@@ -219,16 +230,18 @@ nav ul li a {
 	margin-bottom: 20px;
 }
 
+
 .info {
 	margin-bottom: 20px;
 }
 
 .info p {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
 	text-align: center;
 	margin-bottom: 20px;
 	color: #1799B5;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .coral p {
@@ -236,14 +249,14 @@ nav ul li a {
 }
 
 .info .text {
-	text-align: justify;
+	text-align: left;
 	width: 90%;
 	margin: 0 auto;
-	font-size: 17px;
+	font-size: 18px;
 	color: rgb(125, 114, 81);
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
 }
-
 .designersWrapper {
 	width: 100%;
 	margin: 0px;
@@ -433,11 +446,10 @@ footer {
 	}
 
 	.info {
-		height: 300px;
 	}
 
 	.info p {
-		font-size: 40px;
+		font-size: 27px;
 	}
 
 	.info .text {
