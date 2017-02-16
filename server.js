@@ -54,7 +54,7 @@ app.use('/contact', contactRouter);
 app.use('/appointment', apptRouter);
 app.use('/collection', collectionRouter);
 app.use('/login', loginRouter);
-app.use('/aboutJudeJowilson', aboutJudeJowilsonRouter);
+// app.use('/aboutJudeJowilson', aboutJudeJowilsonRouter);
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
 
