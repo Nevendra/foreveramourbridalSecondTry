@@ -14,7 +14,7 @@ const contactRouter    = require('./routes/contact');
 const apptRouter       = require('./routes/appointment');
 const collectionRouter = require('./routes/collection');
 const PORT             = process.argv[2] || process.env.port || 3000;
-const aboutJudeJowilsonRouter = require('./routes/aboutJudeJowilson');
+const aboutJudeJowilsonRouter = require('./routes/aboutjudejowilson');
 const managementRouter = require('./routes/management');
 
 app.set('view engine', 'ejs');
