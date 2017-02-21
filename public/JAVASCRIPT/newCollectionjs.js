@@ -14,11 +14,14 @@ $(document).ready(function(){
 	var exclusiveContainer = $(".exclusiveContainer");
 	var featuredContainer = $(".featuredContainer");
 	var mainContainer = $(".mainContainer");
+	var nav = $(' nav ul');
+
+	$('.hamburger').click(function(){
+		$('nav ul').slideToggle(1000)
+	})
 
 	function windowSize(){
-		console.log(mainContainer.height())
 		var windowsWidth = $(window).width();
-		console.log(windowsWidth);
 		if(windowsWidth < 800) {
 			mainContainer.css('height', exclusiveContainer.height() + featuredContainer.height() + 100)
 		} else {
@@ -29,6 +32,15 @@ $(document).ready(function(){
 
 			}
 		}
+
+		function hamburger() {
+
+				if(windowsWidth > 949 && nav.is(':hidden')){
+					nav.removeAttr('style');
+				}
+			};
+
+			hamburger();
 	}
 
 	windowSize()

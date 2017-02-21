@@ -75,4 +75,11 @@ $(document).ready(function(){
 		}
 	});
 
+$('html').click(function(){
+  $('.slide').slideToggle('fast');
+
+})
+
+
+
 });
