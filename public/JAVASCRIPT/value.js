@@ -1354,7 +1354,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/ZELDABACK.jpg",
+						img: "../Images/Collection_large/ZELDABACK.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1369,7 +1369,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/BETTE.jpg",
+						img: "../Images/Collection_large/BETTE.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1384,7 +1384,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/BETTEBACK.jpg",
+						img: "../Images/Collection_large/BETTEBACK.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1399,7 +1399,7 @@ angular.module('DesignerValue', [])
 						]
 					},					
 					{
-						img: "../Images/Collection_large/NewJudeGowns/judes photo -215.jpg",
+						img: "../Images/Collection_large/judes photo -215.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1414,7 +1414,7 @@ angular.module('DesignerValue', [])
 						]
 					},					
 					{
-						img: "../Images/Collection_large/NewJudeGowns/judes photo -229.jpg",
+						img: "../Images/Collection_large/judes photo -229.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1429,7 +1429,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/judes photo -252.jpg",
+						img: "../Images/Collection_large/judes photo -252.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1444,7 +1444,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/SOPHIA.jpg",
+						img: "../Images/Collection_large/SOPHIA.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1459,7 +1459,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/ZELDA.jpg",
+						img: "../Images/Collection_large/ZELDA.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1534,7 +1534,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/ELIZABETH_edited.jpg",
+						img: "../Images/Collection_large/ELIZABETH_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1549,7 +1549,7 @@ angular.module('DesignerValue', [])
 						]
 					},					
 					{
-						img: "../Images/Collection_large/NewJudeGowns/ELIZABETHback_edited.jpg",
+						img: "../Images/Collection_large/ELIZABETHback_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1564,7 +1564,7 @@ angular.module('DesignerValue', [])
 						]
 					},					
 					{
-						img: "../Images/Collection_large/NewJudeGowns/FLORENCE_edited.jpg",
+						img: "../Images/Collection_large/FLORENCE_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1579,7 +1579,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/FLORENCEback_edited.jpg",
+						img: "../Images/Collection_large/FLORENCEback_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1594,7 +1594,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/FLORENCEchantillylacedetail_edited.jpg",
+						img: "../Images/Collection_large/FLORENCEchantillylacedetail_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1609,7 +1609,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/GRACE_edited.jpg",
+						img: "../Images/Collection_large/GRACE_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1624,7 +1624,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/GRACEback_edited.jpg",
+						img: "../Images/Collection_large/GRACEback_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1639,7 +1639,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/GRETAback_edited.jpg",
+						img: "../Images/Collection_large/GRETAback_edited.jpg",
 						designerName: "",
 						style: [
 							{
