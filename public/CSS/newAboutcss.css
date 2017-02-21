@@ -163,9 +163,9 @@ h5{
 
 }
 
+
 .float{
-   float: left;
-   padding-left: 29vw;
+  text-align: center;
 
 }
 
@@ -227,13 +227,18 @@ h5{
   color: #1799B5;
 }
 .logoNav a{
-  font-family: "Great Vibes", sans-serif;
-  font-size: 40px;
-  padding-right: 60px;
-  text-decoration: none;
-  color: #1799B5;
+   font-family: "Great Vibes", sans-serif;
+    font-size: 40px;
+    padding-left: 18vw;
+   text-decoration: none;
+    color: #1799B5;
 }
 
+.number{
+  display: inline-block;
+  float: right;
+  padding: 20px 115px 4px 0;
+}
 
 /*-----------------------------------END NAV----------------------------------*/
 
@@ -241,18 +246,21 @@ h5{
 /*-----------------------------------REVIEWS----------------------------------*/
 
 .reviews {
-   width: 42vw;
-    padding: 4px 44px 3px;
+    border: 1.2px solid lightblue;
+    margin: 21px;
+    padding: 1px 16px 2px 25px;
     margin-bottom: 96px;
     line-height: 1.7;
-    width: 490px;
+    width: 586px;
     height: 550px;
     overflow: scroll;
+    border-radius: 2px;
 }
 #title{
   padding: 15px;
 
 }
+
 
 .reviews > #rev1 {
   position: relative;
@@ -322,6 +330,8 @@ footer h3 {
   width: 38vw;
   right: 20vw;
 }
+
+
 /*--------------------------------END FOOTER----------------------------------*/
 
 

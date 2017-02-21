@@ -1296,8 +1296,12 @@ angular.module('DesignerValue', [])
 						]
 					},
 				]
-			},
-			{
+			}
+			
+		])
+
+
+.value('JudeObject', {
 				name: "Jude Jowilson",
 				description: "Sophisticated, classic style, with a modern approach and exquisite attention to detail. Couture gowns hand-crafted in the USA, using the finest fabrics, delicate embroideries, intricate draping and dramatic silhouettes.",
 				featureOrExclusive: "exclusive",
@@ -1650,7 +1654,6 @@ angular.module('DesignerValue', [])
 						]
 					},
 				]
-			},
-		])
+			})
 
 })();

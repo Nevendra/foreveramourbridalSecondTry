@@ -54,33 +54,33 @@
 
 <body ng-app="CollectionImageGallery">
 
-<nav>
-	<div class="logoNav">
-		<p><a href="/">Forever Amour Bridal Boutique</a><p>
-	</div>
+<!-- _______________________________Header__________________________________ -->
 
-<ul>
-	  	<li><a href="/" class="btn btn-4">Home</a></li>
-     	<li><a href="/collection" class="btn btn-4">Collection</a></li>
-	 	<li><a href="/custom" class="btn btn-4">Custom Made</a></li>
-	 	<li><a href="/contact" class="btn btn-4">Contact</a></li>
-	   	<li><a href="/about" class="btn btn-4">About</a></li>
-	   	<li><a href="" class="btn btn-4">Start Here</a></li>
-
- </ul>
-
-	<div class="appointment">
-  		<a href="/appointment">Make An Appointment</a>
-	</div>
-
+<nav class="stroke">
+  <div class="logoNav">
+    <p><a href="/">Forever Amour Bridal Boutique</a></p>
+  </div>
+    <ul class="float">
+          <li><a href="/" class="currentPage btn btn-4">Home</a></li>
+          <li><a href="/about" class="currentPage btn btn-4">About</a></li>
+          <li><a href="/collection" class="currentPage btn btn-4">Our Collection</a></li>
+          <li><a href="/custom" class="currentPage btn btn-4">Custom Made</a></li>
+          <li><a href="/contact" class="currentPage btn btn-4">Contact</a></li>
+          <li><a href="#" class="currentPage btn btn-4">Start Here</a></li>
+    </ul>
+<div class="stro">
+      <a href="/appointment">Make An Appointment</a>
+  </div>
 </nav>
+
+<!-- _______________________________END Header__________________________________ -->
 
 	<div ng-controller="CollectionImageGalleryController as ctrl">
 
 
 		<div class="mainContainer">
 			<div class="titleHeading">
-				<p>Our dress collection includes designers that you will not find anywhere else in NYC; they are exclusive to our salon. You will also find an exclusive custom selection and featured designers that are affordably priced. For brides with limited lead time we offer one-of dresses that you can try and buy.
+				<p>Our dress collection includes designers that you will not find anywhere else in NYC; they are exclusive to our salon. You will also find an exquiste custom collection by Jude Jowilson and featured designers that are attainably priced. For brides with a limited lead time we offer one-of dresses that you can try and buy immediately.
 
 				</p>
 			</div>
@@ -134,56 +134,41 @@
 	</div><!-- end controller -->
 
 <footer>
+ <div class="footerSocialMedia">
+<!--      <h3>Follow Us</h3> -->
+      <div id="footer-social">
+        <a class="socialLink" href="https://www.theknot.com/marketplace/forever-amour-bridal-boutique-new-york-ny-546587" target="_blank">
+          <img id="knotIcon" src="Images/SocialMediaIcons/Knot_SocialIcon_transparent.png" alt="The Knot Icon" title="The Knot Wedding Network">
+        </a>
 
+        <a class="socialLink" href="https://www.facebook.com/ForeverAmourBridalDresses/" target="_blank">
+          <img id="fbIcon" src="Images/SocialMediaIcons/FB_SocialIcon_transparent.png" alt="Facebook Icon" title="Facebook">
+        </a>
 
-  	<ul id="footer-social">
-  		<li>
-	      	<a class="socialLink" href="https://www.theknot.com/marketplace/forever-amour-bridal-boutique-new-york-ny-546587" target="_blank">
-	          <img id="knotIcon" src="/Images/SocialMediaIcons/Knot_SocialIcon_transparent.png" alt="The Knot Icon" title="The Knot Wedding Network">
-	        </a>
-  		</li>
-  		<li>
-			<a class="socialLink" href="https://www.facebook.com/ForeverAmourBridalDresses/" target="_blank">
-	          <img id="fbIcon" src="/Images/SocialMediaIcons/FB_SocialIcon_transparent.png" alt="Facebook Icon" title="Facebook">
-	        </a>
-  		</li>
-  		<li>
-  			<a class="socialLink" href="https://twitter.com/foreveramournyc" target="_blank">
-      		  <img id="twitterIcon" src="/Images/SocialMediaIcons/Twitter_SocialIcon_transparent.png" alt="Twitter Icon" title="Twitter">
-   			</a>
-  		</li>
-  		<li>
-  			<a class="socialLink" href="https://www.pinterest.com/foreveramour/" target="_blank">
-      		  <img id="pinterestIcon" src="/Images/SocialMediaIcons/Pinterest_SocialIcon_transparent.png" alt="Pinterest Icon" title="Pinterest">
-    		</a>
-  		</li>
-  		<li>
-  			<a class="socialLink" href="https://www.instagram.com/foreveramourbridalboutique/" target="_blank">
-      		  <img id="instagramIcon" src="/Images/SocialMediaIcons/Instagram_SocialIcon_transparent.png" alt="Instagram Icon" title="Instagram">
-    		</a>
-  		</li>
-  	</ul>
+        <a class="socialLink" href="https://twitter.com/foreveramournyc" target="_blank">
+          <img id="twitterIcon" src="Images/SocialMediaIcons/Twitter_SocialIcon_transparent.png" alt="Twitter Icon" title="Twitter">
+        </a>
 
-	<div class="footerinfo">
-		<ul>
-		    <li class="footerMarginRight">
-				212 - 486 -2900
-			</li>
+        <a class="socialLink" href="https://www.pinterest.com/foreveramour/" target="_blank">
+          <img id="pinterestIcon" src="Images/SocialMediaIcons/Pinterest_SocialIcon_transparent.png" alt="Pinterest Icon" title="Pinterest">
+        </a>
 
-			<li class="footerMarginRight">
-				1089 Second Ave. Suite 2
-		    </li>
+        <a class="socialLink" href="https://www.instagram.com/foreveramourbridalboutique/" target="_blank">
+          <img id="instagramIcon" src="Images/SocialMediaIcons/Instagram_SocialIcon_transparent.png" alt="Instagram Icon" title="Instagram">
+        </a>
+      </div>
 
-	         <li>
-					New York, NY 10022
-	        </li>
-	    </ul>
-	      <p class="email">
-	        stylist@foreveramourbridal.com
-	      </p>
-	        <h5 class="footerTextAlignRight copyright">© 2017 Forever Amour Bridal Boutique All rights reserved.</h5>
-
-	</div>
+<!-- start footer -->
+ <div class="footerContact">
+      <p>212 - 486 -2900</p>
+      <p>1089 Second Ave.Suite 2</p>
+      <p>New York, NY 10022</p>
+      <p>stylist@foreveramourbridal.com</p>
+        <h5>© 2017 Forever Amour Bridal Boutique All rights reserved.</h5>
+    </div>
+      <div class="copyright">
+    </div>
+  </div>
 </footer>
 </body>
 

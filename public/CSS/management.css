@@ -1,5 +1,5 @@
 * {
-    margin:-4px auto;
+  margin:-4px auto;
   box-sizing: border-box;
   box-sizing: border-box;
   color: black;
@@ -9,22 +9,111 @@
 }
 
 body {
+  margin: 0;
   padding-top: 100px;
-  background-color: white;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-wrap: wrap;
+  font-family: 'Rajdhani', sans-serif;
 }
 
+.image-container > img {
+  position: relative;
+  bottom: 40.5vh;
+  height: 60vh;
+  left: 5vw;
+}
 
-/*----------------NAV-----------*/
+/*-------------------------------LOGIN FORM-----------------------------------*/
+.login > h1 {
+  position: relative;
+  left: 1vw;
+  top: 4vh;
+  font-weight: 300;
+  width: 4vw;
+  z-index: 1;
+}
+
+.login > form {
+  position: relative;
+  left: 63vw;
+  bottom: 12vh;
+  display: inline-block;
+  z-index: 1;
+}
+.login > form > input.logForm {
+  position: relative;
+  height: 2vh;
+  font-size: 2vh;
+  width: 10vw;
+  float: left;
+  z-index: 1;
+}
+.login > form > p {
+  position: relative;
+  float: left;
+  bottom: 1.5vh;
+  z-index: 1;
+}
+/*-------------------------------LOGIN END------------------------------------*/
+
+/*-------------------------------REGISTER FORM--------------------------------*/
+
+.register > h2 {
+border-bottom: 1px solid black;
+width: 6vw;
+text-align: center;
+}
+
+.register > form > .regForm {
+  width: 15vw;
+  height: 3vh;
+  font-size: 2vh;
+}
+.register {
+  position: relative;
+  left: 77vw;
+  display: inline-block;
+  top: 4vh;
+}
+
+p {
+  margin: 1vh;
+}
+/*-------------------------------REGISTER END---------------------------------*/
+
+/*------------------------------- QUOTE API-----------------------------------*/
+
+h3 {
+  text-align: center;
+  left: 12vw;
+  position: absolute;
+  bottom: 7vh;
+  width: 50vw;
+  font-size: 3vh;
+  background: -webkit-linear-gradient(#2A628F, #F00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h4 {
+  text-align: center;
+  left: 12vw;
+  position: absolute;
+  bottom: 5vh;
+  width: 50vw;
+  font-size: 2vh;
+  background: -webkit-linear-gradient(#000, #0FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*------------------------------- QUOTE API END-------------------------------*/
+
+/*-----------------------------------NAV--------------------------------------*/
+
 nav {
   width: 100%;
   height: 108px;
   border-bottom: solid 1px #998100;
   position: fixed;
-  z-index: 50;
+  z-index: 3;
   top: 0px;
   background-color: white;
   -webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
@@ -57,7 +146,7 @@ nav ul li a {
     margin-right: 71px;
     padding: 5.5px;
     text-align: center;
-
+    margin-top: -10px;
     float: right;
     position: relative;
     font-size: large;
@@ -162,9 +251,9 @@ h5{
 
 }
 
-
 .float{
-  text-align: center;
+   float: left;
+   padding-left: 29vw;
 
 }
 
@@ -185,7 +274,6 @@ h5{
 }
 
 .appointment p{
-
   color:white;
 }
 
@@ -225,155 +313,13 @@ h5{
 .logoNav p {
   color: #1799B5;
 }
-.logoNav a {
-    font-family: "Great Vibes", sans-serif;
-    font-size: 40px;
-    padding-left: 18vw;
-   text-decoration: none;
-    color: #1799B5;
-}
-
-.number{
-  display: inline-block;
-  float: right;
- padding: 20px 115px 4px 0;
-}
-
-/*---------------END NAV --------------------*/
-
-
-#google_translate_element{
-	top: -45px;
-}
-
-#contact-section{
-	//border: solid red;
-	position: relative;
-	overflow: hidden;
-	height: auto;
-	margin: auto;
-	margin-bottom: 90px;
-	padding: 2% 10% 0 10%;
-}
-
-#contact-section #contact-top{
-	border: solid #1ec5b9 1px;
-	width: 48%;
-	display: inline-block;
-	float: left;
-	padding: 25px;
-	margin-right: 3%;
-	background-color: rgb(245, 245, 245);
-}
-
-#contact-section #contact-top a{
-	text-decoration: none;
-}
-
-#contact-section #contact-bottom{
-	border: solid #1ec5b9 1px;
-	width: 48%;
-	display: inline-block;
-	float: left;
-	padding: 25px;
-	margin-right: 3%;
-	margin-top: 3%;
-	clear: left;
-	background-color: rgb(245, 245, 245);
-}
-
-#contact-section #contact-bottom i{
-	color: #1db2a3;
-}
-
-#contact-section #contact-bottom img{
-	height: 25px;
-	margin-right: 5px;
-}
-
-#contact-section #contact-right{
-	border: solid #1ec5b9 1px;
-	width: 49%;
-	float: right;
-	margin-bottom: -700px;
-	padding-bottom: 700px;
-	/*above two lines are hacks to make this floated div expand to parent height*/
-	//margin-bottom: -99999px;
-	//padding-bottom: 99999px;
-	/*above two lines were the original hacks to expand the div to parent height but the numbers are too big so the google map just showed up blank*/
-	position: relative;
-}
-
-#contact-section #contact-right iframe{
-	width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#bow-container{
-	border-top: solid 2px #12665C;
-	border-bottom: solid 2px #12665C;
-	height: 45px;
-	background-color: #1EC4B8;
-	text-align: center;
-}
-
-#bow-container img{
-	//border: solid 1px;
-	transform: translateY(-25%);
-	height: 200px;
-}
-
-
-footer {
-     position: relative;
-    padding: 10px;
-    background-color: #f9f9f9;
-    width: 100vw;
-}
-footer #footer-social{
-  text-align: center;
-}
-
-footer p {
-  padding-bottom: 5px;
-}
-
-.footerContact {
-     margin: 1px;
-
-    padding: 8px;
-    text-align: center;
-}
-.footerContact p{
-  display: inline-block;
-  padding: 0px 0px 2px 43px;
-}
-
-.footerinfo {
-  margin: 0 auto;
-}
-
-footer a {
+.logoNav a{
+  font-family: "Great Vibes", sans-serif;
+  font-size: 40px;
+  padding-right: 60px;
   text-decoration: none;
+  color: #1799B5;
 }
 
-footer img {
-  height: 25px;
-  width: 25px;
-  background-color: rgba(30, 196, 184, 0.6);
-  border-radius: 50%;
-}
 
-footer h3 {
-  margin-bottom: 30px;
-}
-
-.footerSocialMedia.float {
-  position: relative;
-  width: 38vw;
-  right: 20vw;
-}
-
+/*-----------------------------------END NAV----------------------------------*/

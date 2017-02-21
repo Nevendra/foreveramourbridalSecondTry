@@ -7,6 +7,7 @@
 	<meta name="charset" content="utf-8">
 	<meta http-equiv="content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 
 	<link rel="icon" type="image/ico" href="../Images/BridalFavicon.ico">
 
@@ -37,44 +38,40 @@
 </head>
 <body ng-app="CollectionImageGallery" ng-controller="CollectionImageGalleryController as ctrl">
 	<div class="additionalNav">
-		<i class=" closeAdditionalNav fa fa-bars" aria-hidden="true"></i>
+		<p class=" closeAdditionalNav">X</p>
 		<ul>
 			<li><a href="additionalDesigners">Additional Designer</a></li>
 			<li><a href="eddiek">Eddie K</a></li>
-			<li><a href="judeJowlison">Jude Jowilson</a></li>
+			<li><a href="/aboutJudeJowilson">Jude Jowilson</a></li>
 			<li><a href="justinAlexander">Justin Alexander</a></li>
 			<li><a href="nicolespose">Nicole Spose</a></li>
 			<li><a href="rosaClara">Rosa Clara</a></li>
 			<li><a href="venus">Venus</a></li>
 		</ul>
 	</div>
-	<nav>
-	<div class="logoNav">
-		<p><a href="/">Forever Amour Bridal Boutique</a><p>
-		</div>
+<!-- _______________________________Header__________________________________ -->
 
-	<ul>
-		  	<li><a href="/" class="btn btn-4">Home</a></li>
-	     	<li><a href="/collection" class="btn btn-4">Collection</a></li>
-		 	<li><a href="/custom" class="btn btn-4">Custom Made</a></li>
-		 	<li><a href="/contact" class="btn btn-4">Contact</a></li>
-		   	<li><a href="/about" class="btn btn-4">About</a></li>
-		   	<li><a href="" class="btn btn-4">Start Here</a></li>
+<nav class="stroke">
+  <div class="logoNav">
+    <p><a href="/">Forever Amour Bridal Boutique</a></p>
+  </div>
+    <ul class="float">
+          <li><a href="/" class="currentPage btn btn-4">Home</a></li>
+          <li><a href="/about" class="currentPage btn btn-4">About</a></li>
+          <li><a href="/collection" class="currentPage btn btn-4">Our Collection</a></li>
+          <li><a href="/custom" class="currentPage btn btn-4">Custom Made</a></li>
+          <li><a href="/contact" class="currentPage btn btn-4">Contact</a></li>
+          <li><a href="#" class="currentPage btn btn-4">Start Here</a></li>
+    </ul>
+<div class="stro">
+      <a href="/appointment">Make An Appointment</a>
+  </div>
+</nav>
 
-	 </ul>
-
-		<div class="appointment">
-	  		<a href="/appointment">Make An Appointment</a>
-		</div>
-
-	   <!--  <div class="clear">
-	    </div> -->
-
-	</nav>
-
+<!-- _______________________________END Header__________________________________ -->
 	<div>
 		<div class="mainContent">
-			<div class="additionalDesigner" ng-if="ctrl.mainHtml == true">
+			<div class="additionalDesigner">
 				<p>Additional Designers<span>               </span><span><i class="fa fa-bars" aria-hidden="true"></i></span></p>
 			</div>
 			<div class="designerAbout" ng-if="ctrl.mainHtml == true">
@@ -85,9 +82,14 @@
 				</div>
 			</div>
 			<div class="designerGallery" ng-if="ctrl.mainHtml == true">
-				<div class="galleryBox float" ng-repeat=" gallery in ctrl.justinAlexanderPaginate">
+				<div class="galleryBox inline" ng-repeat=" gallery in ctrl.justinAlexanderPaginate">
 					<img class="clickedImage" ng-click="ctrl.viewLargeImage(gallery.img, ctrl.justinAlexanderPaginate, $index)" src="{{gallery.img}}">
 					<p ng-bind="gallery.designerName"></p>
+				</div>
+				<div class="pageButtonDiv">
+					<p class="previousMain" ng-click="ctrl.prevPage(ctrl.justinAlexander[1], ctrl.current_page)">&laquo;</p>
+			
+					<p class="nextMain" ng-click="ctrl.nextPage(ctrl.justinAlexander[1], ctrl.current_page)">&raquo;</p>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -95,15 +97,11 @@
 
 		</div>
 
-		<p class="previousMain" ng-click="ctrl.prevPage(ctrl.justinAlexander[1], ctrl.current_page)">&laquo;</p>
-			
-		<p class="nextMain" ng-click="ctrl.nextPage(ctrl.justinAlexander[1], ctrl.current_page)">&raquo;</p>
-
 		<div class="selectedImage" ng-if="ctrl.clickedThumbNail == true">
 			<div class="selectedImageContent">
-				<p class="previous" ng-click="ctrl.prevImage(ctrl.selectedArray, ctrl.selectedIndex)">Previous</p>
+				<p class="previous" ng-click="ctrl.prevImage(ctrl.justinAlexander[1])">&laquo;</p>
 				<img class-"theSelectedImage" src="{{ctrl.selectedImage}}">
-				<p class="next" ng-click="ctrl.nextImage(ctrl.selectedArray, ctrl.selectedIndex)">Next</p>
+				<p class="next" ng-click="ctrl.nextImage(ctrl.justinAlexander[1])">&raquo;</p>
 				<P class="close" ng-click="ctrl.closeDesignerImageGallerySelectedImage()">X</P>
 			</div>
 			<div class="clear"></div>
@@ -111,57 +109,41 @@
 	</div>
 
 <footer>
+ <div class="footerSocialMedia">
+<!--      <h3>Follow Us</h3> -->
+      <div id="footer-social">
+        <a class="socialLink" href="https://www.theknot.com/marketplace/forever-amour-bridal-boutique-new-york-ny-546587" target="_blank">
+          <img id="knotIcon" src="Images/SocialMediaIcons/Knot_SocialIcon_transparent.png" alt="The Knot Icon" title="The Knot Wedding Network">
+        </a>
 
+        <a class="socialLink" href="https://www.facebook.com/ForeverAmourBridalDresses/" target="_blank">
+          <img id="fbIcon" src="Images/SocialMediaIcons/FB_SocialIcon_transparent.png" alt="Facebook Icon" title="Facebook">
+        </a>
 
-  	<ul id="footer-social">
-  		<li>
-	      	<a class="socialLink" href="https://www.theknot.com/marketplace/forever-amour-bridal-boutique-new-york-ny-546587" target="_blank">
-	          <img id="knotIcon" src="/Images/SocialMediaIcons/Knot_SocialIcon_transparent.png" alt="The Knot Icon" title="The Knot Wedding Network">
-	        </a>
-  		</li>
-  		<li>
-			<a class="socialLink" href="https://www.facebook.com/ForeverAmourBridalDresses/" target="_blank">
-	          <img id="fbIcon" src="/Images/SocialMediaIcons/FB_SocialIcon_transparent.png" alt="Facebook Icon" title="Facebook">
-	        </a>
-  		</li>
-  		<li>
-  			<a class="socialLink" href="https://twitter.com/foreveramournyc" target="_blank">
-      		  <img id="twitterIcon" src="/Images/SocialMediaIcons/Twitter_SocialIcon_transparent.png" alt="Twitter Icon" title="Twitter">
-   			</a>
-  		</li>
-  		<li>
-  			<a class="socialLink" href="https://www.pinterest.com/foreveramour/" target="_blank">
-      		  <img id="pinterestIcon" src="/Images/SocialMediaIcons/Pinterest_SocialIcon_transparent.png" alt="Pinterest Icon" title="Pinterest">
-    		</a>
-  		</li>
-  		<li>
-  			<a class="socialLink" href="https://www.instagram.com/foreveramourbridalboutique/" target="_blank">
-      		  <img id="instagramIcon" src="/Images/SocialMediaIcons/Instagram_SocialIcon_transparent.png" alt="Instagram Icon" title="Instagram">
-    		</a>
-  		</li>
-  	</ul>
+        <a class="socialLink" href="https://twitter.com/foreveramournyc" target="_blank">
+          <img id="twitterIcon" src="Images/SocialMediaIcons/Twitter_SocialIcon_transparent.png" alt="Twitter Icon" title="Twitter">
+        </a>
 
-	<div class="footerinfo">
-		<ul>
-		    <li class="footerMarginRight">
-				212 - 486 -2900
-			</li>
+        <a class="socialLink" href="https://www.pinterest.com/foreveramour/" target="_blank">
+          <img id="pinterestIcon" src="Images/SocialMediaIcons/Pinterest_SocialIcon_transparent.png" alt="Pinterest Icon" title="Pinterest">
+        </a>
 
-			<li class="footerMarginRight">
-				1089 Second Ave. Suite 2
-		    </li>
+        <a class="socialLink" href="https://www.instagram.com/foreveramourbridalboutique/" target="_blank">
+          <img id="instagramIcon" src="Images/SocialMediaIcons/Instagram_SocialIcon_transparent.png" alt="Instagram Icon" title="Instagram">
+        </a>
+      </div>
 
-	         <li>
-					New York, NY 10022
-	        </li>
-	    </ul>
-	      <p class="email">
-	        stylist@foreveramourbridal.com
-	      </p>
-	        <h5 class="footerTextAlignRight copyright">© 2017 Forever Amour Bridal Boutique All rights reserved.</h5>
-
-	</div>
+<!-- start footer -->
+ <div class="footerContact">
+      <p>212 - 486 -2900</p>
+      <p>1089 Second Ave.Suite 2</p>
+      <p>New York, NY 10022</p>
+      <p>stylist@foreveramourbridal.com</p>
+        <h5>© 2017 Forever Amour Bridal Boutique All rights reserved.</h5>
+    </div>
+      <div class="copyright">
+    </div>
+  </div>
 </footer>
-
 </body>
 </html>
