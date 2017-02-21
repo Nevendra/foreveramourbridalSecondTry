@@ -56,6 +56,27 @@ angular.module('DesignerService', ['DesignerValue'])
 	return DesignerListFactory;
 })//// ends designerlistfactory
 
+// .factory('JustJudeFactory', function(){
+// 	function JustJudeFactory(array){
+// 		this.judeObjArray = array;
+// 	}
+	
+
+// 	JustJudeFactory.prototype.judeGallery = function(){
+// 		console.log(this.judeObjArray)
+// 		this.judeGalleryArray = ;
+// 		for(var i = 0; i < this.judeObjArray.gallery.length; i ++){
+// 			this.judeObject = this.judeObjArray[i];
+// 			this.judeGalleryArray.push(this.judeObject);
+// 		}
+// 		console.log(this.judeObjArray.gallery);
+// 	}
+
+
+
+// 	return JustJudeFactory;
+// })
+
 .service('PaginateDesigner', function(DesignerListFactory, CollectionArray){
 	var self = this;
 	self.PaginateDesignerFunction = function(array, page,  clickedPage){
@@ -71,15 +92,37 @@ angular.module('DesignerService', ['DesignerValue'])
 	};
 
 
-	self.ChangeImage = function(array, index){
+	self.ChangeImage = function(array, image, trueOrFalse){
 		self.galleryArray = array;
-		self.galleryNewImageObject;
+		self.currentImage = image;
 		self.galleryNewImage;
 		for(var i = 0; i < self.galleryArray.length; i++){
 			self.galleryImages = self.galleryArray[i];
-				self.galleryNewImage = self.galleryArray[index].img;
+				if(self.galleryImages.img === self.currentImage){
+					console.log(self.currentImage);
+					console.log(i);
+					var thisNum = i;
+					if(trueOrFalse === true){
+						if(thisNum === 0){
+							thisNum = self.galleryArray.length - 1;
+						} else {
+							thisNum = thisNum - 1;
+						}
+					
+						console.log(thisNum);
+						self.galleryNewImage = self.galleryArray[thisNum].img;
+					} else if (trueOrFalse === false){
+						if(thisNum === self.galleryArray.length - 1){
+							thisNum = 0;
+						} else {
+							thisNum = thisNum + 1;
+						}
+						console.log(thisNum);
+						self.galleryNewImage = self.galleryArray[thisNum].img;
+					}
+				}
 		}
-
+		console.log(self.galleryNewImage);
 		return self.galleryNewImage;
 	}
 

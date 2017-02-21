@@ -13,4 +13,15 @@ $( document ).ready(function() {
 		}
 	});
 
+	$('.dressesButton').click(function(){
+		function fadeInImageGallery(){
+			$('.imageGallery').fadeIn(1000);
+		}
+		$('.ladyImage').fadeOut(1000, fadeInImageGallery);
+	})
+
+	$('.hamburger').click(function(){
+		$('nav ul').slideToggle(1000)
+	})
+
 });
