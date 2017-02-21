@@ -9,6 +9,7 @@ $(document).ready(function(){
 	var selectedContent = $(".selectedImageContent");
 	var theSelectedImage = selectedContent.find(".theSelectedImage");
 	var windowWidth = $(window).width();
+	var nav = $(' nav ul');
 
 	if(designerAbout.height() >= designerGallery.height()){
 		mainContent.css('height', designerAbout);
@@ -37,50 +38,19 @@ $(document).ready(function(){
 	var designerGallery = $(".designerGallery");
 	var galleryBox = designerGallery.find(".galleryBox");
 
-	// var page = 1;
-	// var numOfPages;
+	$('.hamburger').click(function(){
+		$('nav ul').slideToggle(1000)
+	})
 
-	// function pagination(page) {
-	// 	var current_page = page;
-	// 	if(windowWidth < 1000 ) {
-	// 		var records_per_page = 6;
-	// 		numOfPages = Math.floor(galleryBox.length / 6);
-	// 	} else {
-	// 		var records_per_page = 9;
-	// 		numOfPages = Math.floor(galleryBox.length / 6);
-	// 	}
-	// 		$(galleryBox).hide();
-	// 	for (var i = (page-1) * records_per_page; i < (page * records_per_page) && i < galleryBox.length; i++) {
-	// 		$(galleryBox[i]).show();
-	// 	}
-	// }
+			function windowResize() {
+				var width = $(window).width();
+				var menu = $('nav ul');
 
-	// pagination(page);
+				if(width > 949 && nav.is(':hidden')){
+					nav.removeAttr('style');
+				}
+			};
 
-	// $(".nextMain").click(function(){
-
-	// 	if(page === numOfPages){
-	// 		page = 1;
-	// 	} else {
-	// 		page = page + 1;
-	// 	}
-	// 	console.log(page);
-	// 	pagination(page);
-	// });
-
-	// $(".previousMain").click(function(){
-
-	// 	if(page === 1){
-	// 		page = numOfPages;
-	// 	} else {
-	// 		page = page - 1;
-	// 	}
-	// 	console.log(page);
-	// 	pagination(page);
-	// })
-
-	// $(window).on('resize', function(){
-	// 	pagination(page);
-	// });
+			$(window).resize(windowResize);
 
 });

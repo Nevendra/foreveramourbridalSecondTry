@@ -4,14 +4,7 @@ $( document ).ready(function() {
   	var judeImageDiv = $(".judeImage");
 	var judeLookBook = judeImageDiv.find(".lookBook");
 	var windowWidth = $(window).width();
-	$(window).on('load resize', function() {  
-
-		if(windowWidth > 500){
-			judeLookBook.css('width', judeImageDiv.width() - 255);
-		} else {
-			judeLookBook.css('width', judeImageDiv.width() - 100);
-		}
-	});
+	var nav = $(' nav ul');
 
 	$('.dressesButton').click(function(){
 		function fadeInImageGallery(){
@@ -23,5 +16,16 @@ $( document ).ready(function() {
 	$('.hamburger').click(function(){
 		$('nav ul').slideToggle(1000)
 	})
+
+			function windowResize() {
+				var width = $(window).width();
+				var menu = $('nav ul');
+
+				if(width > 949 && nav.is(':hidden')){
+					nav.removeAttr('style');
+				}
+			};
+
+			$(window).resize(windowResize);
 
 });
