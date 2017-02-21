@@ -44,13 +44,13 @@ nav {
 }
 nav ul {
    width: 100%;
-    height: 0px;
+/*    height: 0px;*/
   text-align: center;
 	margin-left: -25px;
  
 }
 nav ul li {
-    display: inline-block;
+    display: block;
     text-align: center;
     padding: -27px;
     margin: 9.5px;
@@ -69,32 +69,166 @@ nav ul li a {
 .float {
     float: left;
 }
-.appointment {
-	float: right;
-	  width: 23%;
-    margin-right: 57px;
-    padding-top: 8px;
+.hamburger{
+  display: block;
+  position: fixed;
+  left: 50%;
+  -ms-transform: translateX(-70%);
+  transform: translateX(-70%);
+}
+nav {
+  width: 100%;
+  height: 108px;
+  border-bottom: solid 1px #998100;
+  position: fixed;
+  z-index: 50;
+  top: 0px;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+  padding-top: 10px;
+  font-family: 'Rajdhani', sans-serif;
+
+}
+nav ul {
+  width: 100%;
+/*  height: 0px;*/
+  display: none;
+  padding-top: 9px;
+  background-color: white;
+}
+nav ul li {
+    display: block;
     text-align: center;
-    font-size: larger;
-    border-radius: 5px;
-    background-color:white;
+    padding: -27px;
+    margin: 6.5px;
+    padding: initial;
+}
+nav ul li a {
+  color: #4ab2b2;
+  text-decoration: none;
+  font-size: 17px;
+ }
+
+/*--------------------------BUTTON EFFECT -----------------------*/
+.stro{
+    overflow: hidden;
+    float: right;
+    margin-right: 71px;
+    padding: 5.5px;
+    text-align: center;
+
+    float: right;
+    position: relative;
+    font-size: large;
+}
+.stro a{
+    color: #ef8e89;
+    text-decoration: none;
+    position: relative;
+    /* width: 8vw; */
+    padding: 18px;
 
 }
-.appointment:hover{
+.stro a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.stro a:hover{
+  text-decoration: none;
   color:white;
-  background-color:#1799B5 ;
+  background-color: #ef8e89;
+
 }
 
-.appointment p{
-  color:white;
-}
-:link {
-    text-decoration:none;
-    color:green;
+.stro  a:hover:after {
+  width: 100%;
 }
 
-.appointment a{
-  color:black;
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/*---------------NEED THIS FOR THE HOVER--------------*/
+.btn-4:hover:after {
+ -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+h5{
+      font-weight: 300;
+    padding-top: 10px;
+    text-align: center;
+
+}
+/*END OF FOOTER*/
+
+ /* LI CLASS */
+.currentPage a {
+  color: white;
+}
+
+.float {
+    float: left;
+}
+
+.appointment {
+  text-decoration: none;
+    overflow: hidden;
+   float: right;
+    margin-right: 57px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 5px;
 }
 
 .logo {
@@ -106,12 +240,9 @@ nav ul li a {
 
 .logo a{
   font-family: "Great Vibes", sans-serif;
-  font-size: 34px;
   padding-right: 10px;
-  color: #1db2a3;
   text-decoration: none;
 }
-
 .logo span {
   font-family: "Great Vibes", sans-serif;
   font-size: 60px;
@@ -121,7 +252,6 @@ nav ul li a {
 }
 .logoNav {
   text-align: center;
-  padding-top: 2px;
 }
 .logoNav p {
   color: #1799B5;
@@ -133,76 +263,22 @@ nav ul li a {
   text-decoration: none;
   color: #1799B5;
 }
+
 .btn {
   color: rgb(125, 114, 81);
 
     font-weight: 400;
-    line-height: 22px;
+    /*line-height: 22px;*/
+    /* margin: 5px auto 3em; */
+    /* max-width: 114px; */
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
+    /* vertical-align: top; */
     width: 151px;
     font-size: smaller;
-    padding: -16px;
+    padding: 3.5px;
 
-}
-/*  @media(min-width: 400px) {
-    display: inline-block;
-    margin-right: 2.5em;
-
-    &:nth-of-type(even) {
-      margin-right: 0;
-    }
-  }
-
-  @media(min-width: 600px) {
-
-    &:nth-of-type(even) {
-      margin-right: 2.5em;
-    }
-
-    &:nth-of-type(5) {
-      margin-right: 0;
-    }
-
-  }
-
-  &:hover { text-decoration: none; }
-  }
-*/
-
-
-.btn-4 {
-  overflow: visible;
-    position: absolute;
-}
-.btn-4 span {
-  z-index: 20;
-}
-.btn-4:after {
-  background: #fff;
-  content: "";
-  height: 155px;
-  left: -75px;
-  opacity: .2;
-  position: absolute;
-  top: -50px;
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
-  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  width: 50px;
-  z-index: -10;
-}
-
-.btn-4:hover:after {
-  left: 120%;
-  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.btn:hover{
-  color:white;
 }
 .mainContent {
   margin-top: 50px;
@@ -213,17 +289,17 @@ nav ul li a {
   margin: 50px;
 }
 
-.content {
+/*.content {
   height: 450px;
-}
+}*/
 .ladyImage {
 width: 100%;
   background-color: white;
   background-image: url(../Images/judeAboutImage.jpg);
   background-size: 100% 100%;
   height: 400px;
-   color: #1799B5;
-   text-align: justify;
+/*   color: #1799B5;
+*/   text-align: justify;
    position: relative; 
    background-repeat: no-repeat;
    background-position: center;
@@ -233,7 +309,7 @@ width: 100%;
 
 .judeTitle p {
 
-  color: #ef8e89;
+  color: rgb(125, 114, 81);
   padding-bottom: 10px;
   text-align: center;
   font-size: 33px;
@@ -241,78 +317,154 @@ width: 100%;
   font-weight: 100;
 }
 
+.judeTitle p .{
+
+  color: rgb(125, 114, 81);
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 33px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+.judeTitle .subTitle {
+  font-size: 17px;
+}
+
 .judeAbout {
   padding: 10px;
-  background-color: rgba(255,255,255, 0.9);
+  background-color: rgba(255,255,255, 0.7);
 }
 
 .judeAbout .aboutText {
   font-size: 17px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
+  display: none;
+}
+.dressesButton {
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 5px;
+  border: solid 1px black;
+  border-radius: 25px;
+  width: 300px;
+  text-align: center;
+  color: black;
+
+}
+.imageGallery {
+  width: 100%;
+  text-align: center;
+  display: none;
 }
 
-.judesLookBook {
-  padding-top: 100px;
-  float: right;
+.imageGallery img {
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  display: inline-block;
 }
 
-.lookBook {
-  height: 100px;
-  background-color: black;
-  margin-bottom: 10px;
-  overflow: hidden;
+.selectedImage {
+  position: fixed;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  width: 100vw;
+  background-color: white;
 }
-.judeImage {
+.selectedImageContent {
+  text-align: center;
+  height: 100%;
+  width: 100%;
   position: relative;
 }
-.judeImage img {
-  left: -99px;
+.selectedImageContent img {
+  height: 100%;
+  padding: 3px;
+}
+.close {
+  color: red;
+  height: 25px;
+  width: 25px;
+  padding-top: 2px;
+  border-radius: 25px;
   position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px
+}
+.previous {
+  left: 10px;
+  padding: 7px;
+  background-color: #1799B5;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  font-size: 20px;
+}
+.next {
+  right: 7px;
+  padding: 7px;
+  background-color: #1799B5;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  font-size: 20px;
 }
 
-
-.lookBookOne {
-  background-image: url(../Images/judeLookBookUno.jpg);
-  background-size: cover;
-}
-
-.lookBookTwo {
-  background-image: url(../Images/judeLookBookDos.jpg);
-  background-size: cover;
-}
-
-.lookBookThree {
-  background-image: url(../Images/judeLookBookTres.jpg); 
-  background-size: cover;
-}
-
-/*.ladyImage img {
-  width: 100%;
-}
-
-.judeAbout {
+footer {
+     position: relative;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 100vw;
+    font-family: 'Rajdhani', sans-serif;
 
 }
-
-.judeAbout p {
-  font-size: 17px;
-  text-align: left;
-  padding: 0px 20px;
-  margin-bottom: 50px;
-  font-family: 'Open Sans', sans-serif;
-  color: #1799B5;
+footer #footer-social{
+  text-align: center;
 }
 
-.judeImage {
-  width: 50%;
-  height: 400px;
-  overflow: hidden;
+footer p {
+  padding-bottom: 5px;
+}
+
+.footerContact {
+     margin: 1px;
+
+    padding: 8px;
+    text-align: center;
+}
+.footerContact p{
+  display: inline-block;
+  padding: 0px 0px 2px 43px;
+}
+
+.footerinfo {
   margin: 0 auto;
 }
 
-.judeImage img {
-  width: 100%;
+footer a {
+  text-decoration: none;
+}
+
+footer img {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(30, 196, 184, 0.6);
+  border-radius: 50%;
+}
+
+footer h3 {
+  margin-bottom: 30px;
+}
+
+/*.footerSocialMedia.float {
+  position: relative;
+  width: 38vw;
+  right: 20vw;
 }*/
 
 /********************************* 375PX *************************************************/ 
@@ -447,7 +599,7 @@ width: 100%;
   }
 
   .judeAbout .aboutText {
-  
+    display: block;
   }
 
   .lookBook {
@@ -468,6 +620,11 @@ width: 100%;
   .lookBookOne {
     background-image: url(../Images/judeLookBookUno.jpg);
     background-size: cover;
+  }
+  .dressesButton {
+    border: solid 1px #ef8e89;
+    color: #ef8e89;
+
   }
 }
 
@@ -527,6 +684,7 @@ width: 100%;
 
 
 @media screen and (min-width: 800px) {
+  
   .judeAbout {
 
   }
@@ -536,7 +694,7 @@ width: 100%;
   }
 
   .judeTitle {
-
+    padding-bottom: 20px;
   }
 
   .lookBook {
@@ -560,6 +718,82 @@ width: 100%;
     background-size: cover;
   }
 
+  .hamburger{
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    height: 104px;
+    border-bottom: solid 1px #998100;
+    position: fixed;
+    z-index: 50;
+    top: 0px;
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+  }
+  nav ul {
+     width: 100%;
+      height: 0px;
+      display: block;
+    text-align: center;
+    margin-left: -25px;
+   
+  }
+  nav ul li {
+      display: inline-block;
+      text-align: center;
+      padding: -27px;
+      margin: 9.5px;
+      padding: initial;
+  }
+
+
+  nav ul li a {
+    color: #4ab2b2;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .clear {
+    clear: both;;
+  }
+  .float {
+      float: left;
+  }
+  nav {
+    width: 100%;
+    height: 108px;
+    border-bottom: solid 1px #998100;
+    position: fixed;
+    z-index: 50;
+    top: 0px;
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+    padding-top: 10px;
+    font-family: 'Rajdhani', sans-serif;
+
+  }
+  nav ul {
+    width: 100%;
+    height: 0px;
+    padding-top: 9px;
+  }
+  nav ul li {
+      display: inline-block;
+      text-align: center;
+      padding: -27px;
+      margin: 6.5px;
+      padding: initial;
+  }
+  nav ul li a {
+    color: #4ab2b2;
+    text-decoration: none;
+    font-size: 17px;
+   }
 }
 
 

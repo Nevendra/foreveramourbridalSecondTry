@@ -3,7 +3,7 @@
 
 angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 
-.controller("CollectionImageGalleryController", function(DesignerListFactory, $location, $anchorScroll, PaginateDesigner, CollectionArray) {
+.controller("CollectionImageGalleryController", function(DesignerListFactory, $location, $anchorScroll, PaginateDesigner, CollectionArray, JudeObject) {
 
 	var self = this;
 	self.scrollTo = function(id) {
@@ -20,6 +20,9 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
         $anchorScroll();
       }
    	}
+   	self.justJudeObject = JudeObject;
+   	self.justJude = self.justJudeObject.gallery;
+   	console.log(self.justJude);
    	self.current_page = 1;
 	self.designersArray = new DesignerListFactory(CollectionArray);
 	self.featureDesignerList = self.designersArray.onlyFeature();
@@ -31,7 +34,7 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 	self.eddieK = self.designersArray.getDesigner("Eddy K");
 	self.rosaClara = self.designersArray.getDesigner("Rosa Clará");
 	self.venus = self.designersArray.getDesigner("Venus");
-	self.judeJowilson = self.designersArray.getDesigner("Jude Jowilson");
+	// self.judeJowilson = self.designersArray.getDesigner("Jude Jowilson");
 	self.additionalDesigner = self.designersArray.getDesigner("Additional Designers");
 
 	self.additionalDesignerPaginate = PaginateDesigner.PaginateDesignerFunction(self.additionalDesigner[1], self.current_page, self.pageClicked);
@@ -40,7 +43,7 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 	self.eddieKPaginate = PaginateDesigner.PaginateDesignerFunction(self.eddieK[1], self.current_page, self.pageClicked);
 	self.rosaClaraPaginate = PaginateDesigner.PaginateDesignerFunction(self.rosaClara[1], self.current_page, self.pageClicked);
 	self.venusPaginate = PaginateDesigner.PaginateDesignerFunction(self.venus[1], self.current_page, self.pageClicked);
-	self.judeJowilsonPaginate = PaginateDesigner.PaginateDesignerFunction(self.judeJowilson[1], self.current_page, self.pageClicked);
+	// self.judeJowilsonPaginate = PaginateDesigner.PaginateDesignerFunction(self.judeJowilson[1], self.current_page, self.pageClicked);
 
 
 
@@ -71,36 +74,24 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 
 	self.prevImage = function(array) {
 		self.currentArray = array;
-		if(self.selectedIndex === 0){
-			self.selectedIndex = self.currentArray.length - 1;
-		} else {
-			self.selectedIndex = self.selectedIndex - 1;
-		}
-		self.selectedImage = PaginateDesigner.ChangeImage(self.currentArray, self.selectedIndex);
+		self.selectedImage;
+		self.selectedImage = PaginateDesigner.ChangeImage(self.currentArray, self.selectedImage, true);
 
 	}
 
 	self.nextImage = function(array) {
 		self.currentArray = array;
-		if(self.selectedIndex === self.currentArray.length - 1){
-			self.selectedIndex = 0;
-		} else {
-			self.selectedIndex = self.selectedIndex + 1;
-		}
-
-		self.selectedImage = PaginateDesigner.ChangeImage(self.currentArray, self.selectedIndex);
+		self.selectedImage;
+		self.selectedImage = PaginateDesigner.ChangeImage(self.currentArray, self.selectedImage, false);
 	}
 
 	self.prevPage = function(array, page) {
 			self.pageClicked = true;
 			self.current_page = page;
-			console.log(self.current_page)
 			if(self.current_page <= 1){
 				self.current_page = Math.ceil(array.length/self.records_per_page);
-				console.log(self.current_page);
 			} else if (self.current_page > 1) {
 				self.current_page = page - 1;
-				console.log(self.current_page);
 			}
 	        	self.additionalDesignerPaginate = PaginateDesigner.PaginateDesignerFunction(array,  self.current_page, self.pageClicked);
 	        	self.justinAlexanderPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
@@ -108,19 +99,16 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 				self.eddieKPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 				self.rosaClaraPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 				self.venusPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
-				self.judeJowilsonPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
+				// self.judeJowilsonPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 	}
 
 	self.nextPage = function(array, page) {
 			self.pageClicked = true;
 			self.current_page = page;
-			console.log(self.current_page)
 			if(page === Math.ceil(array.length/self.records_per_page)){
 				self.current_page = 1;
-				console.log(self.current_page);
 			} else {
 				self.current_page = page + 1;
-				console.log(self.current_page);
 			}
 	        	self.additionalDesignerPaginate = PaginateDesigner.PaginateDesignerFunction(array,  self.current_page, self.pageClicked);
 	        	self.additionalDesignerPaginate = PaginateDesigner.PaginateDesignerFunction(array,  self.current_page, self.pageClicked);
@@ -129,7 +117,7 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 				self.eddieKPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 				self.rosaClaraPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 				self.venusPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
-				self.judeJowilsonPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
+				// self.judeJowilsonPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 	}
 
 })
