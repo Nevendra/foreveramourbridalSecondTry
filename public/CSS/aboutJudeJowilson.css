@@ -46,8 +46,7 @@ nav ul {
    width: 100%;
 /*    height: 0px;*/
   text-align: center;
-	margin-left: -25px;
- 
+	margin-left: 0px;
 }
 nav ul li {
     display: block;
@@ -73,8 +72,12 @@ nav ul li a {
   display: block;
   position: fixed;
   left: 50%;
-  -ms-transform: translateX(-70%);
-  transform: translateX(-70%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.hamburger img {
+  height: 25px;
+  width: 25px;
 }
 nav {
   width: 100%;
@@ -95,7 +98,7 @@ nav ul {
   width: 100%;
 /*  height: 0px;*/
   display: none;
-  padding-top: 9px;
+  padding-top: 20px;
   background-color: white;
 }
 nav ul li {
@@ -112,6 +115,13 @@ nav ul li a {
  }
 
 /*--------------------------BUTTON EFFECT -----------------------*/
+.showAppointment {
+  display: block;
+
+}
+.showAppointment a {
+  color: #ef8e89;
+}
 .stro{
     overflow: hidden;
     float: right;
@@ -122,6 +132,7 @@ nav ul li a {
     float: right;
     position: relative;
     font-size: large;
+    display: none;
 }
 .stro a{
     color: #ef8e89;
@@ -401,7 +412,7 @@ width: 100%;
   padding: 7px;
   background-color: #1799B5;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 50%;
   font-size: 20px;
 }
@@ -410,7 +421,7 @@ width: 100%;
   padding: 7px;
   background-color: #1799B5;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 50%;
   font-size: 20px;
 }
@@ -718,6 +729,59 @@ footer h3 {
     background-size: cover;
   }
 
+
+}
+
+
+
+
+
+/********************************** 900PX *************************************************/
+  
+
+@media screen and (min-width: 900px) {
+
+  .judeAbout {
+
+ 
+  }
+
+  .judeAbout p {
+  }
+
+  .ladyImage {
+    background-size: 60% 100%;
+  }
+
+  .judeTitle {
+
+  }
+  .lookBook {
+    height: 270px;
+    background-color: black;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .judesLookBook {
+    float: right;
+    padding-top: 0px;
+  }
+
+  .judeImage img {
+    position: absolute;
+    top: 100px;
+  }
+  .lookBookOne {
+    background-image: url(../Images/judeLookBookUno.jpg);
+    background-size: cover;
+  }
+
+}
+
+/********************************** 950PX *************************************************/
+  
+@media screen and (min-width: 950px) {
+
   .hamburger{
     display: none;
   }
@@ -794,53 +858,24 @@ footer h3 {
     text-decoration: none;
     font-size: 17px;
    }
+
+  .showAppointment {
+    display: none;
+  }
+  .stro{
+      overflow: hidden;
+      float: right;
+      margin-right: 71px;
+      padding: 5.5px;
+      text-align: center;
+
+      float: right;
+      position: relative;
+      font-size: large;
+      display: block;
+  }
 }
 
-
-
-
-
-/********************************** 900PX *************************************************/
-  
-
-@media screen and (min-width: 900px) {
-
-  .judeAbout {
-
- 
-  }
-
-  .judeAbout p {
-  }
-
-  .ladyImage {
-    background-size: 60% 100%;
-  }
-
-  .judeTitle {
-
-  }
-  .lookBook {
-    height: 270px;
-    background-color: black;
-    margin-bottom: 10px;
-    overflow: hidden;
-  }
-  .judesLookBook {
-    float: right;
-    padding-top: 0px;
-  }
-
-  .judeImage img {
-    position: absolute;
-    top: 100px;
-  }
-  .lookBookOne {
-    background-image: url(../Images/judeLookBookUno.jpg);
-    background-size: cover;
-  }
-
-}
 
 /********************************** 1000PX *************************************************/
   

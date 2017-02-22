@@ -10,6 +10,24 @@ $(document).ready(function(){
 	$("body").css("overflow-y", "auto");
   console.log(badgeOffSetTop);
 
+
+	var windowWidth = $(window).width();
+	var nav = $(' nav ul');
+	var width = $(window).width();
+	$('.hamburger').click(function(){
+		$('nav ul').slideToggle(1000)
+	})
+
+			function windowResize() {
+				var width = $(window).width();
+
+				if(width > 949 && nav.is(':hidden')){
+					nav.removeAttr('style');
+				}
+			};
+
+			$(window).resize(windowResize)
+
 	// window.onload = function() {
 	//  setTimeout (function () {
 	//   scrollTo(0,0);
@@ -27,7 +45,11 @@ $(document).ready(function(){
 		$("body").css("overflow-y", "auto");
 		$("html,body").animate({scrollTop: 0}, 100);
 		$(badgesDiv).css("height", badgesHeight);
-		$(badges).css("width", "0%");
+		if(width < 1100) {
+			badges.css("width", "12%");
+		} else {
+			$(badges).css("width", "0%");
+		}
 
 
 		// $('.homeStart div p').css({

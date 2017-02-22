@@ -5,6 +5,360 @@ angular.module('DesignerValue', [])
 
 .value('CollectionArray', [
 			{
+				name: "Jude Jowilson",
+				description: "Sophisticated, classic style, with a modern approach and exquisite attention to detail. Couture gowns hand-crafted in the USA, using the finest fabrics, delicate embroideries, intricate draping and dramatic silhouettes.",
+				featureOrExclusive: "exclusive",
+				mainImage: "../Images/Collection_large/HUPX9531.jpg",
+				link: "/aboutJudeJowilson",
+				gallery: [
+					{
+						img: "../Images/Collection_large/HUPX9531.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/HUPX9730.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/HUPX9455.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "mermaid"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ZELDABACK.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "ball gown"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/BETTE.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/BETTEBACK.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},					
+					{
+						img: "../Images/Collection_large/judes photo -215.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "mermaid"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},					
+					{
+						img: "../Images/Collection_large/judes photo -229.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "ball gown"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/judes photo -252.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/SOPHIA.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ZELDA.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "mermaid"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/look4back.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "ball gown"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/IMG_26581judej.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/IMG_41331judej.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/IMG_0267judej.JPG",
+						designerName: "",
+						style: [
+							{
+								name: "mermaid"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ELIZABETH_edited.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "ball gown"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},					
+					{
+						img: "../Images/Collection_large/ELIZABETHback_edited.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},					
+					{
+						img: "../Images/Collection_large/FLORENCE_edited.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/FLORENCEback_edited.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "mermaid"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/FLORENCEchantillylacedetail_edited.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "ball gown"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/GRACE_edited.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/GRACEback_edited.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: " not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/GRETAback_edited.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "mermaid"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+				]
+			},
+			{
 				name: "Eddy K",
 				description: "Designed in Milan, the fashion capital of the world, and manufactured with the highest quality fabrics. Sophisticated couture gowns and elegant destination dresses are made with the highest attention to detail that flatters every figure, taste, and occasion.",
 				featureOrExclusive: "feature",
@@ -1354,7 +1708,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/ZELDABACK.jpg",
+						img: "../Images/Collection_large/ZELDABACK.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1369,7 +1723,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/BETTE.jpg",
+						img: "../Images/Collection_large/BETTE.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1384,7 +1738,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/BETTEBACK.jpg",
+						img: "../Images/Collection_large/BETTEBACK.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1399,7 +1753,7 @@ angular.module('DesignerValue', [])
 						]
 					},					
 					{
-						img: "../Images/Collection_large/NewJudeGowns/judes photo -215.jpg",
+						img: "../Images/Collection_large/judes photo -215.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1414,7 +1768,7 @@ angular.module('DesignerValue', [])
 						]
 					},					
 					{
-						img: "../Images/Collection_large/NewJudeGowns/judes photo -229.jpg",
+						img: "../Images/Collection_large/judes photo -229.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1429,7 +1783,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/judes photo -252.jpg",
+						img: "../Images/Collection_large/judes photo -252.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1444,7 +1798,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/SOPHIA.jpg",
+						img: "../Images/Collection_large/SOPHIA.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1459,7 +1813,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/ZELDA.jpg",
+						img: "../Images/Collection_large/ZELDA.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1534,7 +1888,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/ELIZABETH_edited.jpg",
+						img: "../Images/Collection_large/ELIZABETH_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1549,7 +1903,7 @@ angular.module('DesignerValue', [])
 						]
 					},					
 					{
-						img: "../Images/Collection_large/NewJudeGowns/ELIZABETHback_edited.jpg",
+						img: "../Images/Collection_large/ELIZABETHback_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1564,7 +1918,7 @@ angular.module('DesignerValue', [])
 						]
 					},					
 					{
-						img: "../Images/Collection_large/NewJudeGowns/FLORENCE_edited.jpg",
+						img: "../Images/Collection_large/FLORENCE_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1579,7 +1933,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/FLORENCEback_edited.jpg",
+						img: "../Images/Collection_large/FLORENCEback_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1594,7 +1948,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/FLORENCEchantillylacedetail_edited.jpg",
+						img: "../Images/Collection_large/FLORENCEchantillylacedetail_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1609,7 +1963,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/GRACE_edited.jpg",
+						img: "../Images/Collection_large/GRACE_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1624,7 +1978,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/GRACEback_edited.jpg",
+						img: "../Images/Collection_large/GRACEback_edited.jpg",
 						designerName: "",
 						style: [
 							{
@@ -1639,7 +1993,7 @@ angular.module('DesignerValue', [])
 						]
 					},
 					{
-						img: "../Images/Collection_large/NewJudeGowns/GRETAback_edited.jpg",
+						img: "../Images/Collection_large/GRETAback_edited.jpg",
 						designerName: "",
 						style: [
 							{

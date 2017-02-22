@@ -34,7 +34,6 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 	self.eddieK = self.designersArray.getDesigner("Eddy K");
 	self.rosaClara = self.designersArray.getDesigner("Rosa Clará");
 	self.venus = self.designersArray.getDesigner("Venus");
-	// self.judeJowilson = self.designersArray.getDesigner("Jude Jowilson");
 	self.additionalDesigner = self.designersArray.getDesigner("Additional Designers");
 
 	self.additionalDesignerPaginate = PaginateDesigner.PaginateDesignerFunction(self.additionalDesigner[1], self.current_page, self.pageClicked);
@@ -43,7 +42,6 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 	self.eddieKPaginate = PaginateDesigner.PaginateDesignerFunction(self.eddieK[1], self.current_page, self.pageClicked);
 	self.rosaClaraPaginate = PaginateDesigner.PaginateDesignerFunction(self.rosaClara[1], self.current_page, self.pageClicked);
 	self.venusPaginate = PaginateDesigner.PaginateDesignerFunction(self.venus[1], self.current_page, self.pageClicked);
-	// self.judeJowilsonPaginate = PaginateDesigner.PaginateDesignerFunction(self.judeJowilson[1], self.current_page, self.pageClicked);
 
 
 
@@ -99,7 +97,6 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 				self.eddieKPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 				self.rosaClaraPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 				self.venusPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
-				// self.judeJowilsonPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 	}
 
 	self.nextPage = function(array, page) {
@@ -117,7 +114,6 @@ angular.module('CollectionImageGallery', ['DesignerService', 'DesignerValue'])
 				self.eddieKPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 				self.rosaClaraPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 				self.venusPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
-				// self.judeJowilsonPaginate = PaginateDesigner.PaginateDesignerFunction(array, self.current_page, self.pageClicked);
 	}
 
 })
