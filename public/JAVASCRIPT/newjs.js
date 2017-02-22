@@ -45,7 +45,11 @@ $(document).ready(function(){
 		$("body").css("overflow-y", "auto");
 		$("html,body").animate({scrollTop: 0}, 100);
 		$(badgesDiv).css("height", badgesHeight);
-		$(badges).css("width", "0%");
+		if(width < 1100) {
+			badges.css("width", "12%");
+		} else {
+			$(badges).css("width", "0%");
+		}
 
 
 		// $('.homeStart div p').css({
