@@ -412,7 +412,7 @@ width: 100%;
   padding: 7px;
   background-color: #1799B5;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 50%;
   font-size: 20px;
 }
@@ -421,7 +421,7 @@ width: 100%;
   padding: 7px;
   background-color: #1799B5;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 50%;
   font-size: 20px;
 }

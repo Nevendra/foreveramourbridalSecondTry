@@ -5,8 +5,8 @@ angular.module('DesignerService', ['DesignerValue'])
 
 .factory('DesignerListFactory', function(){
 	function DesignerListFactory(array){
-		this.designerArray = array/// ends designer array
-	};/// ends designerlistFactory function()
+		this.designerArray = array
+	};
 
 	DesignerListFactory.prototype.onlyExclusive = function(){
 		this.exclusive = [];
@@ -54,28 +54,7 @@ angular.module('DesignerService', ['DesignerValue'])
 	};
 
 	return DesignerListFactory;
-})//// ends designerlistfactory
-
-// .factory('JustJudeFactory', function(){
-// 	function JustJudeFactory(array){
-// 		this.judeObjArray = array;
-// 	}
-	
-
-// 	JustJudeFactory.prototype.judeGallery = function(){
-// 		console.log(this.judeObjArray)
-// 		this.judeGalleryArray = ;
-// 		for(var i = 0; i < this.judeObjArray.gallery.length; i ++){
-// 			this.judeObject = this.judeObjArray[i];
-// 			this.judeGalleryArray.push(this.judeObject);
-// 		}
-// 		console.log(this.judeObjArray.gallery);
-// 	}
-
-
-
-// 	return JustJudeFactory;
-// })
+})
 
 .service('PaginateDesigner', function(DesignerListFactory, CollectionArray){
 	var self = this;

@@ -384,7 +384,7 @@ h5{
   width: 25px;
   padding-top: 2px;
   border-radius: 25px;
-  position: absolute;
+  position: fixed;
   top: 5px;
   right: 10px;
   font-size: 20px
@@ -394,7 +394,7 @@ h5{
   padding: 7px;
   background-color: #1799B5;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 50%;
   font-size: 20px;
 }
@@ -403,7 +403,7 @@ h5{
   padding: 7px;
   background-color: #1799B5;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 50%;
   font-size: 20px;
 }

@@ -26,7 +26,6 @@ $(document).ready(function(){
 	$(".additionalDesigner").click(function(){
 		 $(".additionalNav").animate({ "left": "0px"}, 1000 );
 		 $(this).fadeOut(1000);
-		// $(".additionalNav").slideToggle();
 
 	});
 
