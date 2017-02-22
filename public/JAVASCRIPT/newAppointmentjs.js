@@ -1,20 +1,21 @@
 $(document).ready(function(){
-	$(window).on('load resize', function(){
-
-		$('.cmhtText').css({
-			position:'absolute',
-			left: ($('.collectionMainHeaderText').width() - $('.cmhtText').outerWidth())/2,
-			top: ($('.collectionMainHeaderText').height() - $('.cmhtText').outerHeight())/2
-		});
 
 
-	});
+		var nav = $('nav ul');
 
-	var navUl = $("nav ul");
-	var navLi = $("nav ul li");
-	navLi.css("width", navUl.width() / 7);
+	$('.hamburger').click(function(){
+		$('nav ul').slideToggle(1000)
+	})
 
-	var footerContact = $('.footerContact').outerWidth(true);
-	var footerSocialMedia = $('.footerSocialMedia').outerWidth(true);
-	$('.footerinfo').css('width', footerContact + footerSocialMedia + 1);
-});
+			function windowResize() {
+				var width = $(window).width();
+				var menu = $('nav ul');
+
+				if(width > 949 && nav.is(':hidden')){
+					nav.removeAttr('style');
+				}
+			};
+
+			$(window).resize(windowResize);
+
+})
