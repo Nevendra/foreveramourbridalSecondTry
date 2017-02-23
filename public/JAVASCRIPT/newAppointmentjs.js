@@ -1,8 +1,7 @@
 $(document).ready(function(){
-
-
-		var nav = $('nav ul');
-
+	var windowWidth = $(window).width();
+	var nav = $(' nav ul');
+	
 	$('.hamburger').click(function(){
 		$('nav ul').slideToggle(1000)
 	})
