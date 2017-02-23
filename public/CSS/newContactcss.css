@@ -304,9 +304,9 @@ h5{
 
 #contact-section #contact-top{
 	border: solid #1ec5b9 1px;
-	width: 48%;
-	display: inline-block;
-	float: left;
+	width: 100%;
+	display: block;
+	float: none;
 	padding: 25px;
 	margin-right: 3%;
 	background-color: rgb(245, 245, 245);
@@ -318,9 +318,9 @@ h5{
 
 #contact-section #contact-bottom{
 	border: solid #1ec5b9 1px;
-	width: 48%;
-	display: inline-block;
-	float: left;
+	width: 100%;
+	display: block;
+	float: none;
 	padding: 25px;
 	margin-right: 3%;
 	margin-top: 3%;
@@ -339,8 +339,9 @@ h5{
 
 #contact-section #contact-right{
 	border: solid #1ec5b9 1px;
-	width: 49%;
-	float: right;
+	width: 100%;
+	float: none;
+  display: none;
 	margin-bottom: -700px;
 	padding-bottom: 700px;
 	/*above two lines are hacks to make this floated div expand to parent height*/
@@ -422,10 +423,84 @@ footer h3 {
   width: 38vw;
   right: 20vw;
 }
-
-/********************************** 950PX *************************************************/
+/********************************** 750PX *************************************************/
   
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 750px) {
+  #contact-section{
+  //border: solid red;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  margin: auto;
+  margin-bottom: 90px;
+  padding: 2% 10% 0 10%;
+}
+
+#contact-section #contact-top{
+  border: solid #1ec5b9 1px;
+  width: 48%;
+  display: inline-block;
+  float: left;
+  padding: 25px;
+  margin-right: 3%;
+  background-color: rgb(245, 245, 245);
+}
+
+#contact-section #contact-top a{
+  text-decoration: none;
+}
+
+#contact-section #contact-bottom{
+  border: solid #1ec5b9 1px;
+  width: 48%;
+  display: inline-block;
+  float: left;
+  padding: 25px;
+  margin-right: 3%;
+  margin-top: 3%;
+  clear: left;
+  background-color: rgb(245, 245, 245);
+}
+
+#contact-section #contact-bottom i{
+  color: #1db2a3;
+}
+
+#contact-section #contact-bottom img{
+  height: 25px;
+  margin-right: 5px;
+}
+
+#contact-section #contact-right{
+  border: solid #1ec5b9 1px;
+  width: 49%;
+  float: right;
+  display: block;
+  margin-bottom: -700px;
+  padding-bottom: 700px;
+  /*above two lines are hacks to make this floated div expand to parent height*/
+  //margin-bottom: -99999px;
+  //padding-bottom: 99999px;
+  /*above two lines were the original hacks to expand the div to parent height but the numbers are too big so the google map just showed up blank*/
+  position: relative;
+}
+
+#contact-section #contact-right iframe{
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+}
+
+
+
+
+
+/********************************** 1025PX *************************************************/
+  
+@media screen and (min-width: 1025px) {
 
   .hamburger{
     display: none;

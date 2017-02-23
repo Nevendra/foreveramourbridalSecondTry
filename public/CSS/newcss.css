@@ -342,7 +342,6 @@ h5{
   z-index: 2;
   padding: 0px;
   margin: 0px;
-  display: none;
 }
 .contentPromo, .contentBadge {
   width: 100%;
@@ -379,7 +378,7 @@ h5{
 */  padding-top: 65px;
   text-align: -webkit-center;
   width: 100%;
-
+  display: none;
 }
 
 .contentPromo p{
@@ -566,7 +565,41 @@ footer h3 {
 */    padding-top: 65px;
     text-align: -webkit-center;
     width: 100%;
+    display: block;
+  }
 
+}
+/********************************** 700PX *************************************************/
+  
+@media screen and (min-width: 750px) and (min-height: 1024px) {
+  .homeContainer {
+    background-image: url("../Images/bnr-img_edited2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -600px 0px;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .contentContainer {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+  }
+  .contentPromo {
+    background-image: url("../Images/swing_edited_smaller.png");
+    color: white;
+/*    height: 61vh;
+*/    padding-top: 65px;
+    text-align: -webkit-center;
+    width: 100%;
+    display: block;
   }
 
 }
@@ -589,9 +622,9 @@ footer h3 {
 }
 
 
-/********************************** 950PX *************************************************/
+/********************************** 1025PX *************************************************/
   
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1025px) {
 
   .hamburger{
     display: none;
