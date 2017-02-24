@@ -509,17 +509,53 @@ footer h3 {
   float: right;
   padding: 26px 126px 4px 1px;
 }
+.element {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  font-size: 30px;
+  font-family: "Great Vibes", sans-serif;
+/*  color: #ef8e89;
+*/   color: #1799B5;
+
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 5s infinite;
+    -moz-animation: blink 5s infinite;
+    animation: blink 5s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 /*--------------FOOTER ENDS---------------------*/
 
 /*----------------400px-----------------------*/
+@media screen and (min-width: 400px){
+  .element {
+    top: 30%;
 
+  }
+}
 
 /*--------------- 800PX -------------------------*/
 
 
 /*-----------------1200px---------------------*/
 
-/********************************** 700PX *************************************************/
+/********************************** 600PX *************************************************/
   
 @media screen and (min-width: 600px) {
   .homeContainer {
@@ -567,6 +603,10 @@ footer h3 {
     width: 100%;
     display: block;
   }
+  .element {
+    top: 30%;
+    font-size: 50px;
+  }
 
 }
 /********************************** 700PX *************************************************/
@@ -612,6 +652,23 @@ footer h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -200px 0px;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+  }
+
+}
+
+/********************************** 900PX *************************************************/
+  
+@media screen and (min-width: 1000px) {
+  .homeContainer {
+    background-image: url("../Images/bnr-img_edited2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -150px 0px;
     width: 100vw;
     height: 100%;
     position: fixed;
@@ -720,22 +777,6 @@ footer h3 {
   }
 }
 
-/********************************** 900PX *************************************************/
-  
-@media screen and (min-width: 1000px) {
-  .homeContainer {
-    background-image: url("../Images/bnr-img_edited2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -150px 0px;
-    width: 100vw;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    text-align: center;
-  }
-
-}
 
 /********************************** 1070PX *************************************************/
   
@@ -767,6 +808,12 @@ footer h3 {
     position: fixed;
     z-index: 1;
     text-align: center;
+  }
+
+  .element {
+    top: 30%;
+    font-size: 50px;
+    left: 50px;
   }
 
 }
