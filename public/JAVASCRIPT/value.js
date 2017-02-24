@@ -1662,6 +1662,216 @@ angular.module('DesignerValue', [])
 				mainImage: "../Images/Collection_large/HUPX9531.jpg",
 				link: "collection/judeJowlison",
 				gallery: [
+										{
+						img: "../Images/Collection_large/ABI8_2858.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ABI8_2871.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},					
+					{
+						img: "../Images/Collection_large/ABI8_3149.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "mermaid"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ABI8_2671.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},					
+					{
+						img: "../Images/Collection_large/ABI8_2701.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "ball gown"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ABI8_2784.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ABI8_2896.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ABI8_2944.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ABI8_3060.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ABI8_3050.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},					
+					{
+						img: "../Images/Collection_large/ABI8_2618.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "mermaid"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},					
+					{
+						img: "../Images/Collection_large/ABI8_2503.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "ball gown"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ABI8_2488.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "a-line"
+							},
+							{
+								name: "fit and flare"
+							},
+							{
+								name: "on sale"
+							},
+						]
+					},
+					{
+						img: "../Images/Collection_large/ABI8_2480.jpg",
+						designerName: "",
+						style: [
+							{
+								name: "trumpet"
+							},
+							{
+								name: "sheath"
+							},
+							{
+								name: "not on sale"
+							},
+						]
+					},
 					{
 						img: "../Images/Collection_large/HUPX9531.jpg",
 						designerName: "",
